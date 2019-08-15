@@ -23,4 +23,4 @@ class HelloWorld:
 
 ## Test Insert Image
 
-![marry](https://ww1.sinaimg.cn/large/93d8f721gy1g60687u91oj24g02yo4qr.jpg)
+![marry](https://ww1.sinaimg.cn/large/93d8f721gy1g60687u91oj24g02yo4qr.jpg){:.shadow}
