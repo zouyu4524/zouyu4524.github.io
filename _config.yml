@@ -22,7 +22,6 @@ url     : # the base hostname & protocol for your site e.g. https://www.someone.
 baseurl : # does not include hostname
 title   : Zouyu4524's HomePage
 description: > # this means to ignore newlines until "Language & timezone"
-  邹雨泽的个人主页
 
 
 ## => Language and Timezone
@@ -34,9 +33,9 @@ timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for
 ## => Author and Social
 ##############################
 author:
-  type      : # "person" (default), "organization"
+  type      : person # "person" (default), "organization"
   name      : Yuze Zou
-  url       : 
+  url       : https://zouyu4524.github.io
   avatar    : https://ww1.sinaimg.cn/large/93d8f721ly1g5zkophkybj20b40b4gm1.jpg # path or url of avatar image (square)
   bio       : Ph.D candidate of EIC at HUST.
   email     : zouyuze@hust.edu.cn
