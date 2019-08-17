@@ -10,6 +10,7 @@
 	- [进阶\(本地编译，预览\)](#%E8%BF%9B%E9%98%B6%E6%9C%AC%E5%9C%B0%E7%BC%96%E8%AF%91%EF%BC%8C%E9%A2%84%E8%A7%88)
 		- [依赖项](#%E4%BE%9D%E8%B5%96%E9%A1%B9)
 		- [配置方式](#%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F)
+- [评论设置](#%E8%AF%84%E8%AE%BA%E8%AE%BE%E7%BD%AE)
 - [ChangeLog](#changelog)
 
 <!-- /MarkdownTOC -->
@@ -66,10 +67,20 @@ bundle exec jekyll serve
 
 在浏览器中输入`localhost:4000`即可预览。
 
+## 评论设置
+
+首先需要在`_config.yml`文件中配置`comments`下的`provider`, 以`gitalk`为例。接下来需要相应配置`gitalk`的各个参数, 注释中有详述。其原理为, 评论内容自动连接到Github指定仓库, 并在该仓库创建Issue。从而将评论内容填入其中。为了实现这个功能, 还需要创建一个GitHub的OAuth application, 创建[链接](https://github.com/settings/applications/new)。其中名称可以填写为主页repo, URL和callback URL一致, 均为`https:USERNAME/github.io`。创建后就可以得到相应的Client ID以及Client Secret。
+
+此外, 需要开启评论功能的文章需要为其设置唯一的`key`属性, 为字符串, 以字母开头（**不需要引号**）, Gitalk将会以此`key`在相应的评论所创建的issue上打上标签。
+
+*本地通过Jekyll编译时无法看到评论功能。*
+
+**注意**: 相应主页的repo需要开启ISSUE功能, 否则无法开启评论。
 
 ## ChangeLog
 
 | 日期	| 修改说明 |
 |:---:	|:---	  |
+| 2019/08/17 | 启用评论功能(gitalk), 新增一篇以前的博客 |
 | 2019/08/15 | 第一篇blog, 测试Mathjax和代码高亮	|
 | 2019/08/14 | Fork TeXt, 搭建框架 |
