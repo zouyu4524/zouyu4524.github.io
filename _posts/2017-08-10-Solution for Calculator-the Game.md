@@ -1,6 +1,7 @@
 ---
 layout: article
 key: Solution-2017-08-10
+title: "Solution for Calculator: the Game"
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
