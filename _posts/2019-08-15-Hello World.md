@@ -3,6 +3,7 @@ title: "TeXt: 超赞的Jekyll主题"
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
+pageview: false
 tags: TeXt Test
 ---
 ## Test Mathjax
