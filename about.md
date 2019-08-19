@@ -17,6 +17,7 @@ title: 关于我
 
 ### 发表文章
 
+- Jing Xu, Shimin Gong, **Yuze Zou**, et al. “Redundant Sniffer Deployment for Multi-Channel Wireless Network Forensics with Unreliable Conditions,” IEEE Transactions on Cognitive Communications and Networking, accepted.  
 - Jing Xu, **Yuze Zou**, Shimin Gong, et al. “Robust Transmissions in Wireless Powered Multi-Relay Networks with Chance Interference Constraints,” IEEE Transactions on Communications, 2018.
 - **Yuze Zou**, Jing Xu, Shimin Gong, et al. “Backscatter-Aided Hybrid Data Offloading for Wireless Powered Edge Sensor Networks,” in Proc. Globecom, Hawaii, 2019.    
 - **Yuze Zou**, Shaohan Feng, Dusit Niyato, et al. “Dynamic Games in Federated Learning Training Service Market,” in Proc. PacRim, Victoria, B.C., 2019. [\[slides\]](assets/slides/PacRim'19-dynamic-games.pdf)  
