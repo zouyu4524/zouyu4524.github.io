@@ -188,3 +188,6 @@ package-lock.json
 _site/
 .sass-cache/
 .jekyll-metadata
+
+# tmp post folder
+tmp_posts/
