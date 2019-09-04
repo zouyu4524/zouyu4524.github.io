@@ -81,6 +81,8 @@ bundle exec jekyll serve
 
 | 日期	| 修改说明 |
 |:---:	|:---	  |
+| 2019/09/04 | 新增blog, 介绍Python中调用MATLAB的方法 |
+| 2019/08/28 | 增加 `jekyll-seo-tag` |
 | 2019/08/18 | 更改logo, 新增以前的博客内容 |
 | 2019/08/17 | 启用评论功能(gitalk), 新增一篇以前的博客, 更新About |
 | 2019/08/15 | 第一篇blog, 测试Mathjax和代码高亮	|
