@@ -46,7 +46,7 @@ author:
   telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
   zhihu     : zouyu4524 # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
-  douban    : 69722837 # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
+  douban    : zouyu4524 # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
   github    : zouyu4524 # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
