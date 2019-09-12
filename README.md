@@ -81,6 +81,7 @@ bundle exec jekyll serve
 
 | 日期	| 修改说明 |
 |:---:	|:---	  |
+| 2019/09/12 | 新增blog, 翻译论文 |
 | 2019/09/04 | 新增blog, 介绍Python中调用MATLAB的方法 |
 | 2019/08/28 | 增加 `jekyll-seo-tag` |
 | 2019/08/18 | 更改logo, 新增以前的博客内容 |
