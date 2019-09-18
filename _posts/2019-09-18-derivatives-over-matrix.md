@@ -35,7 +35,7 @@ $$
 
 注意到其中第一部分为标量对$B\times M$矩阵的梯度, 第二部分为$B\times M$矩阵对标量的梯度; 两者结果均为$B\times M$矩阵, 两者间的"乘"是指对应项相乘再相加, 即"内积"。接下来我们分别计算这两项。
 
-### 第一项: $\frac{\partial L}{\partial \tilde{ {\bf Y} }}$
+### 第一项: $\partial L / \partial \tilde{ {\bf Y} }$
 
 同样地, 我们首先拆解为标量对标量的求导问题, 如下: 
 
@@ -52,7 +52,7 @@ $$
 \frac{\partial L}{\partial \tilde{ {\bf Y} }} = 2 ( \tilde{ {\bf Y} } - {\bf Y}), \label{first_term}
 $$
 
-### 第二项: $\frac{ \partial \tilde{ {\bf Y} } }{ \partial w_ {n, m} }$
+### 第二项: $\partial \tilde{ {\bf Y} } / \partial w_ {n, m} $
 
 这一项是矩阵对标量求导, 同样地, 先按照标量对标量求导处理: 
 
@@ -101,8 +101,8 @@ $$
 \end{aligned}
 $$
 
-其中$\circ$表示Hadamard积, 即矩阵对应项相乘。${\bf X}_ n$与$( \tilde{ {\bf Y} } - {\bf Y} )_ m$分别表示矩阵$X$的第$n$列和$( \tilde{ {\bf Y} } - {\bf Y} )$的第$m$列。  
-综合以上, 将结果矩阵化可以得到$\frac{\partial L}{ \partial {\bf W} }$表示如下:  
+其中$\circ$表示Hadamard积, 即矩阵对应项相乘。${\bf X}_ n$与$( \tilde{ {\bf Y} } - {\bf Y} )_ m$分别表示矩阵${\bf X}$的第$n$列和$( \tilde{ {\bf Y} } - {\bf Y} )$的第$m$列。  
+综合以上, 将结果矩阵化可以得到$\partial L / \partial {\bf W} $表示如下:  
 
 $$
 \begin{aligned}
