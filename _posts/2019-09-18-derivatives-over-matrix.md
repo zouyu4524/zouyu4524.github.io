@@ -1,6 +1,6 @@
 ---
 layout: article
-key: rl-target-magnitude
+key: matrix-derivative
 title: "向量, 矩阵与张量梯度的理论推导"
 author: Yuze Zou
 show_author_profile: true
