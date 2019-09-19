@@ -37,7 +37,7 @@ grad_w1 = x.T.dot(grad_h)
 ```
 {: .language-python}
 
-以上代码给出了反向传播计算Loss函数分别对网络参数`w1`和`w2`的梯度计算过程。计算准则可以参见[矩阵导数推导](derivative-basics.md)查阅详细的分析。其中Loss函数为MSE, 即`loss = np.square(y_pred - y).sum()`, 因此`grad_y_pred = 2.0 * (y_pred - y)`。  
+以上代码给出了反向传播计算Loss函数分别对网络参数`w1`和`w2`的梯度计算过程。计算准则可以参见[矩阵导数推导](derivative-basics.html)查阅详细的分析。其中Loss函数为MSE, 即`loss = np.square(y_pred - y).sum()`, 因此`grad_y_pred = 2.0 * (y_pred - y)`。  
 最后, 单步的参数更新由如下方式给出:  
 ```
 # Update weights
