@@ -81,6 +81,7 @@ bundle exec jekyll serve
 
 | 日期	| 修改说明 |
 |:---:	|:---	  |
+| 2019/09/24 | 新增blog, PyTorch backward与in-place赋值小记 |
 | 2019/09/19 | 新增blog, PyTorch基础教程 |
 | 2019/09/18 | 新增blog, 矩阵梯度推导 \| 修改Mathjax的自动编号为`True` |
 | 2019/09/12 | 新增blog, 翻译论文 |
