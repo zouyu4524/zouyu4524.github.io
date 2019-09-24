@@ -84,7 +84,14 @@ tensor([1.])
 
 <script src="https://gist.github.com/zouyu4524/26d98491444ea896203ab71a8e36f0a3.js?file=pytorch_backward_03.py"></script>
 
-这一步与上一步的唯一区别在于对`w.data`修改方式变为了`w.data *= 2`, 即**in-place**赋值方式[^1], 这一概念并非PyTorch专有, 而是程序设计中的通用称呼。分析两种赋值方式的区别在于:  
+这一步与上一步的唯一区别在于对`w.data`修改方式变为了`w.data *= 2`, 即**in-place**赋值方式[^1], 这一概念并非PyTorch专有, 而是程序设计中的通用称呼。这一步所得到的输出如下:  
+
+```
+tensor([8.])
+tensor([1.])
+```
+
+正是预期的结果。分析两种赋值方式的区别在于:  
 
 ```
 w.data = w.data * 2
