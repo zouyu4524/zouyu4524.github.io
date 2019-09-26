@@ -40,6 +40,8 @@ $$
 
 为了以上的需求, 我们先从一个简单的例子说起。类似地, 我们构造一个"五脏俱全"的计算图如下:  
 
+<div align="center" markdown="1"> 
+
 ```mermaid
 graph LR;
     x --> y((y));
@@ -48,6 +50,8 @@ graph LR;
 style x fill:#9ACD32, stroke:#333
 style w fill:#9ACD32, stroke:#333
 ```
+</div>
+
 计算规则如下:  
 
 $$
@@ -97,6 +101,8 @@ tensor([1.])
 w.data = w.data * 2
 ```
 
+<div align="center" markdown="1">
+
 ```mermaid
 graph LR;
 subgraph Before assignment
@@ -109,6 +115,7 @@ end
 style B fill:pink,stroke:#333
 style C fill:yellow, stroke:#333
 ```
+</div>
 
 如图所示, 实际上开辟了新的内存空间, 计算**新的**`w.data`, 而原本`w.data`所指向的内存地址所存放的结果仍然为原值。
 
@@ -117,12 +124,15 @@ style C fill:yellow, stroke:#333
 w.data *= 2
 ```
 
+<div align="center" markdown="1">
+
 ```mermaid
 graph LR;
     A[w.data] --> B("old | new value")
     B .-> |" times 2 "| B
 style B fill:pink,stroke:#333
 ```
+</div>
 
 如图所示, 在**in-place**赋值下, `w.data`所指向的内存地址不会发生变化, 仅相应地址中的值变化。而这恰恰是实现$\eqref{lower_update}$所需要的。因为, `backward`在计算梯度时, 是通过**原地址**获取相应的数值。如此, 通过**in-place**赋值方式所得到的`w.data`就是修改后预期的结果, 相反第二步中非**in-place**的赋值方式下原地址的值不变, 所以计算梯度时仍然用的原值。
 
