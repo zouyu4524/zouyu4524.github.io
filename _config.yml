@@ -199,6 +199,7 @@ exclude:
   - /screenshots
   - /test
   - /vendor
+  - /tmp_posts  # folder for tmp posts stored locally
 
 defaults:
   - scope:
