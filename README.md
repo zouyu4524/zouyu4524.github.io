@@ -81,6 +81,7 @@ bundle exec jekyll serve
 
 | 日期	| 修改说明 |
 |:---:	|:---	  |
+| 2019/09/30 | 新增旧blog, MATLAB OOP 读书笔记 |
 | 2019/09/28 | 新增blog, Pop-Art 算法复现 |
 | 2019/09/24 | 新增blog, PyTorch backward与in-place赋值小记 |
 | 2019/09/19 | 新增blog, PyTorch基础教程 |
