@@ -12,6 +12,8 @@ tags: ["Geometry", "Interests"]
 
 李永乐老师的视频中简明扼要地说明了尺规作图**可作图**的概念以及尺规作图与**代数运算**的关系, 在此基础上说明了高斯通过尺规做出正十七边形的原理, 很有意思!  
 
+<!--more-->
+
 <div>{%- include extensions/youtube.html id='I2pf3gjz5QU' -%}</div>
 
 **简单总结如下**:  
