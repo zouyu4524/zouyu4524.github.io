@@ -29,7 +29,7 @@ tags: ["Geometry", "Interests"]
     <div class="cell cell--4">
     	<div align="center">
     		<figure>
-				<img src="..\..\..\assets\images\posts\2019-09-30\mul.svg" height="150">
+				<img src="/assets\images\posts\2019-09-30\mul.svg" height="150">
 				<figcaption>(a) 乘法演示: $a, b \rightarrow ab$ </figcaption>
 			</figure>
 		</div>
@@ -37,7 +37,7 @@ tags: ["Geometry", "Interests"]
     <div class="cell cell--4">
     	<div align="center">
     		<figure>
-				<img src="..\..\..\assets\images\posts\2019-09-30\recip.svg" height="150">
+				<img src="/assets\images\posts\2019-09-30\recip.svg" height="150">
 				<figcaption>(b) 倒数演示: $a \rightarrow {1}/{a}$</figcaption>
 			</figure>
 		</div>
@@ -45,7 +45,7 @@ tags: ["Geometry", "Interests"]
     <div class="cell cell--4">
     	<div align="center">
     		<figure>
-				<img src="..\..\..\assets\images\posts\2019-09-30\sqrt.svg" height="150">
+				<img src="/assets\images\posts\2019-09-30\sqrt.svg" height="150">
 				<figcaption>(c) 开方演示: $a \rightarrow \sqrt{a}$</figcaption>
 			</figure>
 		</div>
