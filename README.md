@@ -81,6 +81,7 @@ bundle exec jekyll serve
 
 | 日期	| 修改说明 |
 |:---:	|:---	  |
+| 2010/10/01 | 新增blog, TikZ简介 |
 | 2019/09/30 | 新增blog, 高斯正十七边形 |
 | 2019/09/30 | 新增旧blog, MATLAB OOP 读书笔记 |
 | 2019/09/28 | 新增blog, Pop-Art 算法复现 |
