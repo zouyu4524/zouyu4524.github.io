@@ -9,7 +9,7 @@ tags: ["Machine Learning", "Matrix Calculus", "Deep Learning"]
 ---
 
 
-机器学习, 神经网络的反向传播的基础在于梯度计算, 涉及向量(vector)、矩阵(matrix)以及张量(tensor)各类梯度, 明白其中的计算原理和规则具有一定的重要性。**The Matrix Calculus You Need For Deep Learning**[^2]巨细无遗地阐述了与机器学习相关的各类calculus知识, 对于夯实相关基础大有裨益。**Vector, Matrix, and Tensor Derivatives**[^1]从基础出发, 以常见的示例阐明了向量, 矩阵, 张量相关求导的**推导方法**, 极具启发性。本文总结**Vector, Matrix, and Tensor Derivatives**[^1]的核心思路如下, 并以一个常见的例子作为练习该推导方法。
+机器学习, 神经网络的反向传播的基础在于梯度计算, 涉及向量(vector)、矩阵(matrix)以及张量(tensor)各类梯度, 明白其中的计算原理和规则具有一定的重要性。<!--more-->**The Matrix Calculus You Need For Deep Learning**[^2]巨细无遗地阐述了与机器学习相关的各类calculus知识, 对于夯实相关基础大有裨益。**Vector, Matrix, and Tensor Derivatives**[^1]从基础出发, 以常见的示例阐明了向量, 矩阵, 张量相关求导的**推导方法**, 极具启发性。本文总结**Vector, Matrix, and Tensor Derivatives**[^1]的核心思路如下, 并以一个常见的例子作为练习该推导方法。
 
 ## 基本思路
 

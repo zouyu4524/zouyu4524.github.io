@@ -7,7 +7,7 @@ show_author_profile: true
 mathjax: true
 tags: ["MATLAB", "Python"]
 ---
-MATLAB自R2014b后可以在command窗口中调用Python[^1], 实现MATLAB与Python的相对深度的融合, 由此可以提供一定的桥梁作用。本文对此做一个简单的介绍。
+MATLAB自R2014b后可以在command窗口中调用Python[^1], 实现MATLAB与Python的相对深度的融合, 由此可以提供一定的桥梁作用。本文对此做一个简单的介绍。<!--more-->
 
 ### 设置/查看Python版本
 

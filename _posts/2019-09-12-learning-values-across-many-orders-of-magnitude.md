@@ -8,7 +8,7 @@ mathjax: true
 tags: ["Deep Reinforcement Learning", "Deep Learning", "翻译"]
 ---
 
-Hado van Hasselt, Arthur Guez, Matteo Hessel, Volodymyr Mnih, David Silver. "Learning values across many orders of magnitude." In *Advances in Neural Information Processing Systems*, pp. 4287-4295. 2016. [[pdf](https://arxiv.org/pdf/1602.07714)]
+Hado van Hasselt, Arthur Guez, Matteo Hessel, Volodymyr Mnih, David Silver. "Learning values across many orders of magnitude." In *Advances in Neural Information Processing Systems*, pp. 4287-4295. 2016. <!--more-->[[pdf](https://arxiv.org/pdf/1602.07714)]
 
 ## 符号系统
 

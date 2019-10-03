@@ -9,7 +9,7 @@ tags: [MATLAB, Python]
 ---
 
 MATLAB对多线程的支持并不足够, 涉及循环的程序往往需要逐一执行而无法充分利用机器的算力导致执行时间过长。  
-但好在MATLAB提供了Python的接口, 可以方便地从Python中启动MATLAB进程, 并调用相应的MATLAB程序。最为核心的在于MATLAB的Python接口在执行MATLAB程序时提供了`async`(异步)选项, 进而可以启动多个MATLAB进程从而实现并行运算, 大幅提高程序执行效率。
+但好在MATLAB提供了Python的接口, 可以方便地从Python中启动MATLAB进程, 并调用相应的MATLAB程序。<!--more-->最为核心的在于MATLAB的Python接口在执行MATLAB程序时提供了`async`(异步)选项, 进而可以启动多个MATLAB进程从而实现并行运算, 大幅提高程序执行效率。
 
 ## 安装MATLAB engine
 

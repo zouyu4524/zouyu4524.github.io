@@ -7,9 +7,10 @@ show_author_profile: true
 mathjax: true
 tags: [Android, "Deep Learning", "Federated Learning", Java]
 ---
+
 ## 前言
 
-时隔一年之久再次更新博文。😅记录近来的项目经历，留作以后参考，也希望能够帮到有需要的人。
+时隔一年之久再次更新博文。😅记录近来的项目经历，留作以后参考，也希望能够帮到有需要的人。<!--more-->
 
 本项目的需求如下：搭建实际的联合学习（Federated Learning）场景，主要包括两个组成部分：**服务器**与**客户端**。两者的角色分别是：
 

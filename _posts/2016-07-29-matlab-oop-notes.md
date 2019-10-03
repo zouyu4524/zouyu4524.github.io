@@ -1,13 +1,15 @@
 ---
 layout: article
 key: matlab-oop-notes
-title: "《MATLAB面向对象编程: 从入门到设计模式》读书笔记"
+title: "《MATLAB面向对象编程》读书笔记"
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
 mermaid: true
 tags: ["MATLAB", "读书笔记"]
 ---
+
+部分读书笔记。<!--more-->
 
 ## 第2章 面向对象程序入门
 

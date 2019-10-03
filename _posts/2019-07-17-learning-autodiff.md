@@ -7,7 +7,7 @@ show_author_profile: true
 mathjax: true
 tags: ["Machine Learning", "AutoDiff"]
 ---
-Automatic differentiation, 缩写为 AutoDiff 是机器学习中重要概念——backpropagation——的基础。
+Automatic differentiation, 缩写为 AutoDiff 是机器学习中重要概念——backpropagation——的基础。<!--more-->
 
 **概念厘清**: AutoDiff 并不是利用数值化方式*近似计算*梯度, 也不是诸如 Mathematica 数学软件符号化计算梯度；而是介于两者之间, 提供了一种符号化的计算过程。
 

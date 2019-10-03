@@ -8,6 +8,8 @@ mathjax: true
 tags: [LaTeX]
 ---
 
+$\LaTeX$相关问题与解决方式, 不定期更新。<!--more-->
+
 ### IEEEtran会议模板启用`\thanks`
 
 默认情况下, IEEEtran会议模板禁用了`\thanks`, `\IEEEmembership`等标识, 导致编译时被略去, 可以通过在`\begin{document}`前加入`\IEEEoverridecommandlockouts`消去禁用[^4]。

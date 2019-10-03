@@ -8,6 +8,8 @@ mathjax: false
 tags: ["PyTorch", "Python", "Machine Learning"]
 ---
 
+官网基础教程学习记录。<!--more-->
+
 ## From numpy to PyTorch nn
 
 第一阶段, 从numpy写成的基础神经网络反向传播到PyTorch版本的神经网络。  

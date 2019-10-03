@@ -7,6 +7,9 @@ show_author_profile: true
 mathjax: true
 tags: [Linux, Wine]
 ---
+
+微信目前已限制了登录方式, Linux通过Wine实现登录似乎成了唯一选择。<!--more-->
+
 ## 安装步骤
 
 ### 安装Wine 4.0 (不一定必须)

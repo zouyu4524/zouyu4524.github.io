@@ -9,6 +9,8 @@ mermaid: true
 tags: ["PyTorch", "Python", "Deep Reinforcement Learning"]
 ---
 
+通过PyTorch实现Pop-Art算法。<!--more-->
+
 ## 前言
 
 Learning-values-across-many-orders-of-magnitude[^1]一文中提出了Pop-Art算法以解决深度强化学习(Deep reinforcement learning)中target值跨度多个量级而造成的学习缓慢的问题。其中Pop与Art分别表示**P**reserving **O**utputs **P**ercisely以及**A**daptive **R**escaling **T**arget, 即在保障已历经样本输出不变的前提下自适应缩放target值的算法。更为详尽的介绍在[论文翻译: Learning values across many orders of magnitude](https://blog.be-my-only.xyz/2019/09/12/learning-values-across-many-orders-of-magnitude.html)中已给出, 在此不再赘述。本文的目的在于复现论文中提到的算法, 以测试其有效性, 并为适用于自己的问题服务。本文通过PyTorch实现, 结构如下: 首先验证PyTorch的核心组件以测试模型拆分的等效性(这将作为后续的基础); 接着实现PopArt算法与Normalized SGD算法(论文中的算法1, 2)并验证二者的等效性(论文2.3节的statement); 最后通过复现第三章中的示例(包括另外两种对比算法)以期复现论文中的Fig. 1a。

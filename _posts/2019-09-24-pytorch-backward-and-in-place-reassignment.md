@@ -11,7 +11,7 @@ tags: ["PyTorch", "Python", "Machine Learning", "backward"]
 
 ## 前言
 
-本文简要分析PyTorch`backward`使用中遇到的in-place赋值问题, 以作记录。  
+本文简要分析PyTorch`backward`使用中遇到的in-place赋值问题, 以作记录。  <!--more-->
 `backward`作为PyTorch的重要函数, 用于自动计算loss对计算图中所有`requires_grad=True`的叶子节点的梯度。日常使用简洁明了, 但偶尔也可能有"奇怪"的需求, 例如在复现[论文](https://papers.nips.cc/paper/6076-learning-values-across-many-orders-of-magnitude.pdf)算法2(Normalized SGD)更新底层网络(**Lower Layers**)参数(${\boldsymbol \theta}$)时。其更新方式定义如下:  
 
 $$

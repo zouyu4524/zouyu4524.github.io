@@ -6,6 +6,8 @@ show_author_profile: true
 tags: [Excel, MATLAB, Mapshape, Visualization]
 ---
 
+本文总结对比三种基于地理信息的数据可视化工具。<!--more-->
+
 ## 动机
 
 近期的论文中需要对省市自治区数据进行可视化, 查询资料后获取如下的解决方案：

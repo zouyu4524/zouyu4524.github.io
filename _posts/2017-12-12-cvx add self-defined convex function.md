@@ -5,7 +5,10 @@ author: Yuze Zou
 show_author_profile: true
 tags: [cvx, MATLAB, "Convex Optimization"]
 ---
-### 背景
+
+本文记录MATLAB/CVX工具包添加自定义函数的示例。<!--more-->
+
+## 背景
 
 最近考虑的一个优化问题中出现了如下的函数：
 
@@ -23,7 +26,7 @@ y 2^{\frac{x}{y}}, & x > 0, y > 0\\
 
 虽然这个函数是凸函数, 但是其形式并不能直接通过cvx表达式表示, 因为$\frac{x}{y}$是`{affine}./{affine}`违背了cvx的[DCP ruleset](http://cvxr.com/cvx/doc/dcp.html)。实际上在给定的定义域内$\frac{x}{y}$是convex的, 但是$y \cdot 2^{x/y}$ 为`{affine}.*{convex}`同样违背了DCP ruleset。总而言之, 这个函数不能直接应用于cvx的语境中。
 
-### 解决方案
+## 解决方案
 
 而cvx提供了增加自定义凸（凹）函数的方法, 在用户手册中以[Adding new functions to the atom library](http://web.cvxr.com/cvx/doc/advanced.html#adding-new-functions-to-the-atom-library)章节给出, 其中提供了两种方式, 一种比较直观, 通过符合DCP ruleset的函数或操作符的组合所形成的函数, 实际上这种方式是一种简单的封装；但在这里并不适合本函数, 原因已在之前给出。另外一种方式, 是把原问题转化为另一个凸（凹）问题, 转换后的问题符合DCP ruleset或借助cvx提供的若干函数, 诸如：`rel_entr`, 我理解这种方式写成的函数在新的cvx环境下就构成了cvx的嵌套。本函数可以通过第二种方式表达, 如下所示：
 
