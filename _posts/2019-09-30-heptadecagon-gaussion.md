@@ -1,7 +1,7 @@
 ---
 layout: article
 key: Heptadecagon-Guassian
-title: "尺寸作图与正十七边形"
+title: "尺规作图与正十七边形"
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
