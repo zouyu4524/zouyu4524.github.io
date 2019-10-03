@@ -5,6 +5,7 @@ title: "为博客添加代码块一键复制功能"
 author: Yuze Zou
 show_author_profile: true
 clipboard: true
+sharing: true
 tags: ["TeXt", "Jekyll", "Javascript", "GitHub"]
 ---
 
