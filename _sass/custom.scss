@@ -1,3 +1,15 @@
 /* start custom scss snippet */
 
+// generating caption for img using markdowm syntax
+// The idea is from http://sparkandshine.net/insert-images-with-captions-in-markdown/
+// and originates from https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll
+img {
+	& + em {
+		font-style: normal;
+		display: inherit;
+		text-align: center;
+		font-size: 90%;
+	}
+}
+
 /* end custom scss snippet */
