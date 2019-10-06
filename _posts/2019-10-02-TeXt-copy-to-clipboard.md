@@ -5,7 +5,7 @@ title: "为博客添加代码块一键复制功能"
 author: Yuze Zou
 show_author_profile: true
 clipboard: true
-sharing: true
+modify_date: 2019-10-06
 tags: ["TeXt", "Jekyll", "Javascript", "GitHub"]
 ---
 
@@ -19,7 +19,7 @@ tags: ["TeXt", "Jekyll", "Javascript", "GitHub"]
 
 ## 功能简述
 
-- 为博文中的代码块右上角添加复制到剪贴板按钮 <img src="/assets/clippy.svg" height="20" align="middle">, 点击即可复制代码块内容;
+- 为博文中的代码块右上角添加复制到剪贴板按钮 <i class="fas fa-copy"></i>, 点击即可复制代码块内容;
 - 类似Mathjax, 添加控制变量决定是否启用该功能; 
 - 博文内各个代码块独立控制, 即: 可仅为特定的代码块添加。 
 
