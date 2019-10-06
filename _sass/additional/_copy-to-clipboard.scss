@@ -157,13 +157,13 @@
 }
 
 /*styles related to snippet copy to clipboard, borrowed from https://clipboardjs.com/assets/styles/main.css*/
-.clippy {
+.fa-copy {
 	margin-top: -3px;
 	position: relative;
 	top: 3px
 }
 
-.btn[disabled] .clippy {
+.btn[disabled] .fa-copy {
 	opacity: .3
 }
 
