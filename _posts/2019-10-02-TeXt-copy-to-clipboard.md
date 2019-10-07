@@ -41,7 +41,7 @@ tags: ["TeXt", "Jekyll", "Javascript", "GitHub"]
 1. 添加相应的样式CSS;
 2. 查找页面中目标对象: **`pre`且任意父级包含`snippet` class**, 动态为其创建按钮(`.btn`)对象, 并且监听`mouseenter`[^enter]和`mouseleave`[^leave]事件。
 
-其中步骤1通过`.scss`实现, 样式同样来源于[clipboard.js](https://clipboardjs.com/), 做了适当的精简, 保留了与TeTx项目中定义的样式类不冲突的部分; 而步骤2通过Javascript实现, 查找对象的核心代码如下:  
+其中步骤1通过`.scss`实现, 样式同样来源于[clipboard.js](https://clipboardjs.com/), 做了适当的精简, 保留了与TeXt项目中定义的样式类不冲突的部分; 而步骤2通过Javascript实现, 查找对象的核心代码如下:  
 
 <div class="snippet" markdown="1">
 
