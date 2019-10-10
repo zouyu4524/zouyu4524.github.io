@@ -19,14 +19,15 @@ tags: ["TeXt", "Jekyll", "Javascript", "GitHub"]
 
 ## 功能简述
 
-- 为博文中的代码块右上角添加复制到剪贴板按钮 <i class="fas fa-copy"></i>, 点击即可复制代码块内容;
+- 为博文中的代码块右上角添加复制到剪贴板按钮 <i class="far fa-copy"></i>, 点击即可复制代码块内容;
 - 类似Mathjax, 添加控制变量决定是否启用该功能; 
 - 博文内各个代码块独立控制, 即: 可仅为特定的代码块添加。 
 
 
 <div style="margin: 0" align="center" markdown="1">
 
-![clipboard-demo](https://user-images.githubusercontent.com/16682999/66097584-88597380-e5d1-11e9-9156-04b011c15562.gif){: .shadow.rounded}
+![bright](https://user-images.githubusercontent.com/16682999/66320118-d31c1800-e950-11e9-9b0f-3f23b18c70cd.gif){: .shadow.rounded}
+![dark](https://user-images.githubusercontent.com/16682999/66320322-31e19180-e951-11e9-82eb-2a552a15d8e9.gif){: .shadow.rounded}
 
 </div>
 
@@ -83,30 +84,30 @@ def hello():
 jekyll-TeXt-theme
  ├── _data
  |     ├── variable.yml
- |     ├── ...
+ |     └── ...
  ├── _includes
  |     ├── scripts
  |     |    ├── lib
  |     |    ├──  ├── copy-to-clipboard.js
- |     |    ├── ...
+ |     |    |    └── ...
+ |     |    └── ...
  |     ├── clipboard.html // load external clipboard.js
  |     ├── copy-to-clipboard.html // determine whether to include clipboard.html and load copy-to-clipboard.js or not
- |     ├── ...
+ |     └── ...
  ├── _layouts
  |     ├── page.html
- |     ├── ...
+ |     └── ...
  ├── _sass
  |     ├── additional
  |     |    ├── _copy-to-clipboard.scss
- |     |    ├── ...
- |     ├── ...
+ |     |    └── ...
+ |     └── ...
  ├── assets
  |     ├── css
- |     |    ├── main.scss
- |     ├── clippy.svg
- |     ├── ...
+ |     |    └── main.scss
+ |     └── ...
  ├── _config.yml
- ├── ...
+ └── ...
 ```
 
 ### 修改说明
