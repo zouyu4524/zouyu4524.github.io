@@ -1,0 +1,33 @@
+---
+layout: base
+title: Home
+header: false
+full_width: true
+
+mathjax: false
+excerpt: >
+    Yuze Zou's HomePage
+
+permalink: /index.html
+---
+{% include analytics.html %}
+<body>
+	<div class="landing-home" itemscope itemtype="https://schema.org/Person">		
+		<div class="main">
+			<div class="content">
+				<div class="my-photo">
+					<img itemprop="image" alt="logo" src="https://user-images.githubusercontent.com/16682999/66698400-530aff00-ed10-11e9-8e4e-b0c8e8739a33.png" />
+				</div>
+				<h1 itemprop="name" class="title-text"> {{site.author.name}} </h1>
+
+				{% include author-links.html author=site.author %}
+				<br>
+				<a class="button--rounded button--theme-light button-lg" title="My Blog" itemprop="url" href="/blog" target="_self">My blog</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+	{%- include scripts/common.js -%}
+</script>
