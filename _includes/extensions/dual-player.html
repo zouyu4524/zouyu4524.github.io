@@ -1,0 +1,38 @@
+<div id="dual_player">
+	<a class="button button--primary button--rounded bilibili" style="background-color: #00A1D6;">BiliBili</a>
+	<a class="button button--primary button--rounded youtube" style="background-color: #FF1E1E;">YouTube</a>
+<div class="extensions extensions--video" style="top: -0.5rem">
+	<iframe src="" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
+</div>
+</div>
+
+<script type="text/javascript">
+(function () {
+
+	var src_b = "//player.bilibili.com/player.html?aid={{ include.id_b | json }}&page=1";
+	var src_y = "https://www.youtube.com/embed/{{ include.id_y | json }}?rel=0&showinfo=0";
+	
+	var unique_id = 'video_' + Date.now().toString(36) + "_" + Math.random().toString(36).substr(2, 5);
+
+	// replace dual player's id as an unique one
+	document.getElementById('dual_player').id = unique_id;
+
+	var src_url = src_b; // use bilibili as default
+	var language = navigator.language;
+	
+	if ( language !== "zh-CN" ) {
+    	// use youtube if the language is not zh-CN
+    	src_url = src_y;
+    }
+    document.getElementById(unique_id).querySelector("iframe").src = src_url;
+
+    // bind two buttons with bilibili and youtube links, respectively
+    document.getElementById(unique_id).querySelector(".bilibili").addEventListener("click", function () {
+		this.parentElement.querySelector("iframe").src = src_b;
+	});
+	document.getElementById(unique_id).querySelector(".youtube").addEventListener("click", function () {
+		this.parentElement.querySelector("iframe").src = src_y;
+	});
+    
+})();
+</script>
