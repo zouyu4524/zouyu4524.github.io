@@ -3,6 +3,14 @@ layout: article
 title: 关于我
 ---
 
+<div id="ID_PHOTO" style="width: 18%;">
+	<div class="card">
+		<div class="card__image">
+			<img class="image" src="https://user-images.githubusercontent.com/16682999/66829296-ad60c580-ef85-11e9-9bb0-6d038d93b751.jpg" />
+		</div>
+	</div>
+</div>
+
 ### 教育经历
 
 - 2016年09月$~\sim~$: [华中科技大学](http://www.hust.edu.cn/)[电子信息与通信学院](http://eic.hust.edu.cn/) \| 博士在读
@@ -19,6 +27,7 @@ title: 关于我
 
 <div align="justify" markdown="1">
 
+- Jiawen Kang, Zehui Xiong, Dusit Niyato, **Yuze Zou**, Yang Zhang, and Mohsen Guizani, "Reliable federated learning for mobile networks", *IEEE Wireless Communications*, accepted. 
 - Jing Xu, Shimin Gong, **Yuze Zou**, et al. “Redundant Sniffer Deployment for Multi-Channel Wireless Network Forensics with Unreliable Conditions,” *IEEE Transactions on Cognitive Communications and Networking*, accepted.  
 - Jing Xu, **Yuze Zou**, Shimin Gong, et al. “Robust Transmissions in Wireless Powered Multi-Relay Networks with Chance Interference Constraints,” *IEEE Transactions on Communications*, 2018.
 - **Yuze Zou**, Jing Xu, Shimin Gong, et al. “Backscatter-Aided Hybrid Data Offloading for Wireless Powered Edge Sensor Networks,” in *Proc. Globecom*, Hawaii, 2019.    
@@ -50,3 +59,26 @@ title: 关于我
 ### *Love of my life*
 
 ![marry](https://user-images.githubusercontent.com/16682999/63209475-d2ff5900-c113-11e9-9fe2-a7535cafa22c.JPG){: .shadow}
+
+
+<style type="text/css">
+#ID_PHOTO {
+    position: relative;
+    top: 10px;
+    float: right;
+    z-index: 99;
+}
+@media screen and (max-width: 800px) {
+	#ID_PHOTO {
+    	display: none !important;
+	}
+}
+</style>
+
+<script type="text/javascript">
+(function () {
+	document.querySelector(".article__header header").appendChild(
+		document.querySelector("#ID_PHOTO")
+	);
+})();
+</script>
