@@ -33,7 +33,7 @@ title: 关于我
 - **Yuze Zou**, Jing Xu, Shimin Gong, et al. “Backscatter-Aided Hybrid Data Offloading for Wireless Powered Edge Sensor Networks,” in *Proc. Globecom*, Hawaii, 2019.    
 - **Yuze Zou**, Shaohan Feng, Dusit Niyato, et al. “Dynamic Games in Federated Learning Training Service Market,” in *Proc. PacRim*, Victoria, B.C., 2019. [\[slides\]](assets/slides/PacRim'19-dynamic-games.pdf)  
 - **Yuze Zou**, Shaohan Feng, Dusit Niyato, et al. “Mobile Device Training Strategies in Federated Learning: An Evolutionary Game Approach,” in *Proc. GreenCom*, 2019. [\[slides\]](assets/slides/GreenCom'19-evolutionary-game.pdf)  
-- Xi Luo, Jing Xu, **Yuze Zou**, et al. “Collaborative Relay Beamforming with Direct Links in Wireless Powered Communications,” in *roc. WCNC*, Morocco, 2019.  
+- Xi Luo, Jing Xu, **Yuze Zou**, et al. “Collaborative Relay Beamforming with Direct Links in Wireless Powered Communications,” in *Proc. WCNC*, Morocco, 2019.  
 - **Yuze Zou**, Wei Liu, Shimin Gong, et al. “Joint Optimization of Wireless Power Transfer and Collaborative Beamforming for Relay Communications,” in *Proc. Globecom*, Abu Dhabi, 2018. [\[slides\]](assets/slides/GC'18-workshop-ps-relay.pdf)  
 - Ge Zhang, Wei Liu, **Yuze Zou**, Wenqing Cheng, “Simulator for Loosely-coupled Hybrid CDN-P2P Streaming Systems,” in *Proc. ICCSN*, Guangzhou, 2017.  
 - Wei Liu, Ge Zhang, **Yuze Zou**, et al. “In-router cache performance under long-term video request traffic in CCN: A simulation-based study,” in *Proc. ICCSN*, Guangzhou, 2017.  
