@@ -1,5 +1,22 @@
 header:
   - titles:
+      en      : &EN       ❤️Domain
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  ❤️域名
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : *ZH_HANT
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      ko      : &KO       ❤️도메인 이름
+      ko-KR   : *KO
+    url: /why-this-domain/
+
+  - titles:
       en      : &EN       📚Blogs
       en-GB   : *EN
       en-US   : *EN
