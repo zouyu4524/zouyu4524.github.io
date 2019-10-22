@@ -81,6 +81,7 @@ bundle exec jekyll serve
 
 | 日期	| 修改说明 |
 |:---:	|:---	  |
+| 2019/10/22 | 新增页面, 罗列常用软件, 备查 |
 | 2019/10/22 | 新增blog, 总结三个CSS相关小项目 |
 | 2019/10/17 | 新增blog, 个人站点相关配置总结 |
 | 2019/10/12 | 更改网站URL为: be-my-only.xyz/blog/, credit to [@Zerone](https://github.com/ZeroneCat) |
