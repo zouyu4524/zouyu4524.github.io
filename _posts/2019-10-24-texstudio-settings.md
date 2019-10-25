@@ -22,7 +22,7 @@ tags: ["LaTeX"]
 
 默认的TeXStudio主题是白色背景, 对我来说看久了眼睛疼, 最后用<span style="background-color: #fdf6e3; color: gray;">米黄色</span>代替, 相应的主题设置文件可以在[这里](https://gist.githubusercontent.com/zouyu4524/c42da1e62bde9d582b49c995e0a2a952/raw/993decd91890aca6bc44594626e85fab62c4f12c/Solarized_Light)[^theme]找到。具体的设置方法如下[^setting]:  
 
-- 定位到TeXStudio的配置文件: texstudio.init, 一般位于: `~\AppData\Roaming\texstudio\texstudio.ini`, 如果找不到的话, 可以在TeXStudio界面<kbd>→</kbd>Help<kbd>→</kbd>Check LaTeX Installation<kbd>→</kbd>在弹出的`System Report`文件中查找**Setting file**对应的路径即可。
+- 定位到TeXStudio的配置文件: texstudio.init, 一般位于: `~\AppData\Roaming\texstudio\texstudio.ini`, 如果找不到的话, 可以在主界面<kbd class="dark-apple">→</kbd>Help<kbd class="dark-apple">→</kbd>Check LaTeX Installation<kbd class="dark-apple">→</kbd>在弹出的`System Report`文件中查找**Setting file**对应的路径即可。
 - 然后在`texstudio.ini`文件中查找`[formats]`标签, 并用[配置文件](https://gist.githubusercontent.com/zouyu4524/c42da1e62bde9d582b49c995e0a2a952/raw/993decd91890aca6bc44594626e85fab62c4f12c/Solarized_Light)替换即可。
 
 除此以外, 生成的PDF文件预览一般也是白色背景, 也可以相应改一下背景色, 修改方法为: 在导言区(`\begin{document}`之前)添加如下语句[^pagecolor]<sup>, </sup>[^rgb]:
