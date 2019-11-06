@@ -14,7 +14,7 @@ tags: ["Geometry", "Interests"]
 
 <!--more-->
 
-<div>{%- include extensions/youtube.html id='I2pf3gjz5QU' -%}</div>
+<div>{% include extensions/dual-player.html id_y='I2pf3gjz5QU' id_b='73934121' %}</div>
 
 **简单总结如下**:  
 
