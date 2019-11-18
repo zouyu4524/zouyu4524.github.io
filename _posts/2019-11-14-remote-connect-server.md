@@ -4,11 +4,12 @@ title: "远程连接实验室服务器"
 key: remote-connect-server
 author: Yuze Zou
 show_author_profile: true
-clipboard: true
+clipboard: false
+modify_date: 2019-11-18
 tags: ["Linux"]
 ---
 
-瞎折腾。 <!--more-->
+乞丐版远程服务器跳板。 <!--more-->
 
 <div style="margin: 0 auto;" align="justify" markdown="1">
 
@@ -28,7 +29,7 @@ tags: ["Linux"]
 1. 旧电脑并没有持续稳定的网络连接, 上网需要通过校园网客户端认证; 
 2. 旧电脑没有独立的显示器, 暂时与我的笔记本共用显示器。
 
-为此, 我需要定时启动校园网客户端以保障网络连接, 这个可以通过`crontab`[^3]实现; 而显示器的问题在于, 如果不接, 那么Teamviewer采不到数据无法实用[^1]<sup>, </sup>[^2]。目前的解决方案是手动在下班后将显示器接回旧电脑。参考链接[^1]<sup>, </sup>[^2]中提到的“虚拟显示器”设备已购, 回头看看效果如何。
+为此, 我需要定时启动校园网客户端以保障网络连接, 这个可以通过`crontab`[^3]实现; 而显示器的问题在于, 如果不接, 那么Teamviewer采不到数据无法实用[^1]<sup>, </sup>[^2]。目前的解决方案是手动在下班后将显示器接回旧电脑。参考链接[^1]<sup>, </sup>[^2]中提到的“虚拟显示器”设备已到, 效果不错。
 
 <div style="margin: 0 auto;" align="center" markdown="1">
 <img src="https://user-images.githubusercontent.com/16682999/68841409-8241d100-06ff-11ea-9bf1-91bf031fb85d.png" class="shadow rounded" width="200px"><em>虚拟显示器</em>
