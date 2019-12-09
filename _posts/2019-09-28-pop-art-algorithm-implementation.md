@@ -154,7 +154,7 @@ tensor([85.1712], requires_grad=True)
 
 * **算法1: Pop-Art**
 
-![Pop-Art](https://user-images.githubusercontent.com/16682999/64672136-33788080-d49d-11e9-9771-bc07a48e99b6.png){: .shadow}{: .border.rounded}
+![Pop-Art](http://img.be-my-only.xyz/pop-art-algorithm-implementation-01.png){: .shadow}{: .border.rounded}
 
 
 如图, 算法1中的关键在于对`UpperLayer`(即参数`W`和`b`)的**两次**更新, 其中第一次是自适应scale(即ART)的同时保留已训练样本的结果(即POP)。第二次是优化算法下的参数更新。需要注意的是: 第一次的更新仅改变参数值(`.data`), 不改变参数的梯度(`.grad`)。另一方面, 有了上一节中拆分网络的经验, 算法1中对两层网络的梯度计算也可以归并为一步`loss.backward()`计算。再分别通过各自网络的优化算子(`optimizer`)调用`step()`更新参数。
@@ -165,7 +165,7 @@ tensor([85.1712], requires_grad=True)
 <img src="https://user-images.githubusercontent.com/16682999/64753079-747f9c00-d554-11e9-9bb3-e93407d09307.png" alt="Normaized-SGD" width="600">
 </p> -->
 
-![Normalized-SGD](https://user-images.githubusercontent.com/16682999/64753079-747f9c00-d554-11e9-9bb3-e93407d09307.png){: .shadow}{: .border.rounded}
+![Normalized-SGD](http://img.be-my-only.xyz/pop-art-algorithm-implementation-02.png){: .shadow}{: .border.rounded}
 
 如图, 算法2的关键是通过缩放后的目标差值和`UpperLayer`的权重参数更新`LowerLayers`的参数。为了实现这一点, 我们需要**暂时**地放缩`UpperLayer`的权重数值(`.data`)以及目标差值。同样地, 调用`loss.backward()`将计算两层网络的梯度, 其中`UpperLayer`的梯度不受缩放的影响(因为梯度中无`W`), 但权重数值本身被缩放, 需要在完成梯度计算后**还原**。
 
@@ -296,7 +296,7 @@ def forward(self, x, y):
 在以上的参数设置下, 最后得到的结果如下图所示:  
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/16682999/65816427-0a424900-e22e-11e9-9dac-52ed086c06f8.png" alt="compare" width="600">
+<img src="http://img.be-my-only.xyz/pop-art-algorithm-implementation-03.png" alt="compare" width="600">
 </p>
 
 与论文中的图对比可以发现, PopArt, SGD算法的结果基本一致, ART算法的趋势也基本一致, 但绝对数值上略有区别。

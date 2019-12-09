@@ -7,7 +7,7 @@ mathjax: false
 <div id="ID_PHOTO" style="width: 18%;">
 	<div class="card">
 		<div class="card__image">
-			<img class="image" src="https://user-images.githubusercontent.com/16682999/66829296-ad60c580-ef85-11e9-9bb0-6d038d93b751.jpg" />
+			<img class="image" src="http://img.be-my-only.xyz/about-me.jpg" />
 		</div>
 	</div>
 </div>
@@ -20,7 +20,7 @@ mathjax: false
 
 ### 科研经历
 
-- 2018年10月&#126;: [南洋理工大学计算机科学与工程学院](http://scse.ntu.edu.sg) 访学 \| 联合学习, 强化学习
+- 2018年10月&#126;2019年11月: [南洋理工大学计算机科学与工程学院](http://scse.ntu.edu.sg) 访学 \| 联合学习, 强化学习
 - 2017年03月&#126;2018年08月: [中国科学院深圳先进技术研究院](http://www.siat.ac.cn/) 客座学生 \| 无线携能通信
 - 2014年01月&#126;2017年02月: [华中科技大学智能互联网技术湖北省重点实验室](http://itec.hust.edu.cn/) \| 网络测量, 内容中心网
 
@@ -59,7 +59,7 @@ mathjax: false
 
 ### *Love of my life*
 
-![marry](https://user-images.githubusercontent.com/16682999/63209475-d2ff5900-c113-11e9-9fe2-a7535cafa22c.JPG){: .shadow}
+![marry](http://img.be-my-only.xyz/marriage.jfif){: .shadow}
 
 
 <style type="text/css">

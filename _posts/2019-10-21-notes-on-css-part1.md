@@ -117,8 +117,8 @@ page[size="A4"] {
 
 <div class="grid-container">
 <div class="grid grid--px-2">
-  <div class="cell cell--5" style="margin: 0 auto;"><img src="https://user-images.githubusercontent.com/16682999/67217206-f1a50780-f456-11e9-8ac8-671a6929d2f6.png" alt="indi" class="shadow" /><em>个人版</em></div>
-  <div class="cell cell--5" style="margin: 0 auto;"><img src="https://user-images.githubusercontent.com/16682999/67215749-9e31ba00-f454-11e9-8053-e204a5dd5bb2.png" alt="grp" class="shadow"/><em>团队版</em></div>
+  <div class="cell cell--5" style="margin: 0 auto;"><img src="http://img.be-my-only.xyz/notes-on-css-part1-01.png" alt="indi" class="shadow" /><em>个人版</em></div>
+  <div class="cell cell--5" style="margin: 0 auto;"><img src="http://img.be-my-only.xyz/notes-on-css-part1-02.png" alt="grp" class="shadow"/><em>团队版</em></div>
 </div>
 </div>
 

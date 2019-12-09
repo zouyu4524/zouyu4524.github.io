@@ -17,7 +17,7 @@ tags: ["居家"]
 为了解决家里无线网络的覆盖问题, 购置了新款的路由器, 但单路由器仍然不能保证全覆盖, 还是存在不少信号死角。两个路由器同时启用后, 在设备移动时, 又需要手动进行切换, 难免有些不方便。此时就可以利用上路由器的**无线桥接**(WDS bridging)功能: 副路由器桥接到主路由器, 由副路由器覆盖信号死角从而实现信号全覆盖的情况下网络自动切换。其拓扑关系如下:  
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/16682999/69418078-e2b2bd00-0d54-11ea-85a5-c36d33b2c1eb.png" alt="topo" width="500px" class="shadow rounded">
+<img src="http://img.be-my-only.xyz/AP-WDS-bridging.png" alt="topo" width="500px" class="shadow rounded">
 </div>
 
 **设备包括**:  

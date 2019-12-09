@@ -61,7 +61,7 @@ https://USERNAME.github.io
 Cloudflare可以为你的网站提供CDN加速、域名解析、页面跳转以及若干实用的App, 例如: [回到顶部](https://dash.cloudflare.com/apps/back-to-top-button)。上面提到的两个步骤之一是到域名服务商设置, 在此以Cloudflare添加根域名(apex domain)为例[^6], 在DNS功能区下添加`A`类型的解析条目, 将个性域名链接到GitHub提供的IP地址(如图所示)即可:  
 
 <div style="margin: 0 auto; width: 80%" align="center" markdown="1">
-![DNS](https://user-images.githubusercontent.com/16682999/66928778-84fbc880-f064-11e9-92ae-3908db48f44b.png){: .shadow.rounded}<em>**在Cloudflare中添加域名解析条目, 将个性域名链接到GitHub的IP地址**</em>
+![DNS](http://img.be-my-only.xyz/personal-website-with-custom-domain-01.png){: .shadow.rounded}<em>**在Cloudflare中添加域名解析条目, 将个性域名链接到GitHub的IP地址**</em>
 </div>
 
 如此, 域名服务商这边的任务就完成了, 接下来是GitHub Pages端的操作。
@@ -71,7 +71,7 @@ Cloudflare可以为你的网站提供CDN加速、域名解析、页面跳转以�
 为了支持个性域名, 可以在repo的Setting下的GitHub Pages/Custom domain中输入个性域名, 如图:  
 
 <div style="margin: 0 auto; width: 80%" align="center" markdown="1">
-![CNAME](https://user-images.githubusercontent.com/16682999/66927499-7d3b2480-f062-11e9-91f1-8373b46dfa16.png){: .shadow.rounded}<em>**GitHub Pages设定CNAME实现绑定个性域名**</em>
+![CNAME](http://img.be-my-only.xyz/personal-website-with-custom-domain-02.png){: .shadow.rounded}<em>**GitHub Pages设定CNAME实现绑定个性域名**</em>
 </div>
 
 在此设定后, repo中将会出现名为`CNAME`文件, 内容即对应的个性域名; 如此, 桥梁便搭起来了。此外, 还可以勾选图中的*Enfore HTTPS*以强制站点使用HTTPS协议提高安全性, 勾选后一般需要若干小时实际生效。此后, 对个性域名的访问将都建立在HTTPS协议之上。
@@ -85,13 +85,13 @@ Cloudflare可以为你的网站提供CDN加速、域名解析、页面跳转以�
 为了增加个人站点的曝光度, 可以通过google search console主动添加网站的站点地图(sitemap), 一般是`.xml`文件。首先如图所示在google search console下添加你的站点网址, 可以添加全域或一个子域名。
 
 <div style="margin: 0 auto; width: 80%" align="center" markdown="1">
-![google search console](https://user-images.githubusercontent.com/16682999/66915066-b7003100-f04a-11e9-8f70-b1aec63e2492.png){: .shadow.rounded}<em>**Google Search Console添加个性网址**</em>
+![google search console](http://img.be-my-only.xyz/personal-website-with-custom-domain-03.png){: .shadow.rounded}<em>**Google Search Console添加个性网址**</em>
 </div>
 
 然后, 点击“站点地图”后输入站点地图的链接(一般是根网址/sitemap.xml)添加即可。
 
 <div style="margin: 0 auto; width: 80%" align="center" markdown="1">
-![sitemap](https://user-images.githubusercontent.com/16682999/66915436-94bae300-f04b-11e9-8b06-dd3e9e526a04.png){: .shadow.rounded}<em>**Google Search Console添加站点地图**</em>
+![sitemap](http://img.be-my-only.xyz/personal-website-with-custom-domain-04.png){: .shadow.rounded}<em>**Google Search Console添加站点地图**</em>
 </div>
 
 [TeXt](https://github.com/kitian616/jekyll-TeXt-theme)主题已包含`jekyll-sitemap`插件[^4], GitHub Pages将会在每次commit后为站点自动生成相应的`sitemap.xml`文件。其他Jekyll主题也可以根据该插件的[说明](https://github.com/jekyll/jekyll-sitemap#usage)相应配置即可。
@@ -115,7 +115,7 @@ https://be-my-only.xyz/blog/article-title.html
 我去除了链接中的日期, 并且将原本的三级域名`blog`挪到了根域名下的`blog`目录了, 那么在Page Rule通过一条指令即可实现, 如图:  
 
 <div style="margin: 0 auto; width: 80%" align="center" markdown="1">
-![page rule](https://user-images.githubusercontent.com/16682999/66931921-6815c400-f069-11e9-8d52-38b15eceed2f.png){: .shadow.rounded}<em>**Cloudflare Page Rule实现链接301重定向**</em>
+![page rule](http://img.be-my-only.xyz/personal-website-with-custom-domain-05.png){: .shadow.rounded}<em>**Cloudflare Page Rule实现链接301重定向**</em>
 </div>
 
 其中`*`是通配符, 而`$3`表示第三个通配符匹配的内容。在源链接中使用了三个通配符, 第一个用于匹配HTTP或HTTPS, 第二个用于匹配源链接中的日期部分, 第三个是源链接中的网页名称。在目的链接中我强制了HTTPS协议并且地址中现在只保留了第三部分, 因此如上所写。确认以后点击保存并部署稍等几分钟Page Rule就会生效, 如此便可以保留已有的搜索引擎结果和别处的链接而仍然将用户引导到修改后的网址了。

@@ -24,7 +24,7 @@ Automatic differentiation, 缩写为 AutoDiff 是机器学习中重要概念—�
 **Computation Graph**: 如下图给出了computation graph的示例: 
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/16682999/63222046-9a738400-c1d4-11e9-9c6e-1b56759b3c8a.jpg" alt="Computation Graph" width="500">
+<img src="http://img.be-my-only.xyz/learning-autodiff-01.jpg" alt="Computation Graph" width="500">
 </div>
 
 其表示的计算过程为: 
@@ -61,7 +61,7 @@ $$
 
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/16682999/63222064-e6262d80-c1d4-11e9-8c70-07070cd704f4.jpg" alt="fully connected graph" width="128">
+<img src="http://img.be-my-only.xyz/learning-autodiff-02.jpg" alt="fully connected graph" width="128">
 </div>
 
 为了理解这个表达式, 我们拆开单独看$\bar{z_ j}$ 的计算过程如下: 
@@ -86,7 +86,7 @@ $$
 相应的`Node`类操作符（以`sum`为例）的运算流程/逻辑如下图所示:
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/16682999/63222068-11108180-c1d5-11e9-9c8e-90f9ce8c1b0c.jpg" alt="node computation" width="500">
+<img src="http://img.be-my-only.xyz/learning-autodiff-03.jpg" alt="node computation" width="500">
 </div>
 
 具体的构造computation graph的实现是`Autograd`的核心代码, 将来可以进一步阅读。  

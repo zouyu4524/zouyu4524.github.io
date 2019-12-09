@@ -170,7 +170,7 @@ explorer: 启动窗口
 
 ### 启动
 
-![screenshot](https://user-images.githubusercontent.com/16682999/63219704-4ce22180-c1aa-11e9-9d00-01e6bff2053c.jpg){: .shadow}
+![screenshot](http://img.be-my-only.xyz/install-wechat-on-linux-via-wine.jpg){: .shadow}
 
 [^1]: [Linux下的wine生活(QQ/微信/Office)](https://www.cnblogs.com/makefile/p/wine-life.html)  
 [^2]: [How to Install and Use Wine to Run Windows Applications on Linux](https://www.youtube.com/watch?v=RmOdA5GeSqs)

@@ -23,7 +23,7 @@ tags: [Excel, MATLAB, Mapshape, Visualization]
 
 <div align="center">
 <figure>
-<img src="https://user-images.githubusercontent.com/16682999/63211091-36de4d80-c125-11e9-9d41-47bb1893b325.png" alt="charging pile">
+<img src="http://img.be-my-only.xyz/map-based-data-visualization.png" alt="charging pile">
 <figcaption>中国各省市自治区电动汽车公共充电桩数量分布（截至2017年12月）</figcaption>
 </figure>
 </div>
