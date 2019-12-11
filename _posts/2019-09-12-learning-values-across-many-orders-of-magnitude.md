@@ -85,7 +85,7 @@ $$
 以上给出了特例, 即当scale和shift均为标量。按以上规则更新了标准化参数后, 根据**Proposition 1**可知原来的输出在新的标准化参数下并不会改变, 而新的训练数据通过新的标准化参数处理后即可用于对函数拟合模型(即$h_ { {\boldsymbol \theta} }$)的训练。
 
 <p align="center">
-<img src="http://img.be-my-only.xyz/learning-values-across-many-orders-of-magnitude-01.png" alt="algorithm 1" width="800">
+<img src="https://img.be-my-only.xyz/learning-values-across-many-orders-of-magnitude-01.png" alt="algorithm 1" width="800">
 </p>
 
 > Algorithm 1 is an example implementation of SGD with Pop-Art for a squared loss. It can be generalized easily to any other loss by changin the definition of ${\boldsymbol \delta}$. Notice that ${\bf W}$ and ${\boldsymbol b}$ are updated twice: first to adapt to the new scale and shift to preserve the outputs of the function, and then by SGD. The order of these updates is important because it allows us to use the new normalization immediately in the subsequent SGD update.
@@ -168,7 +168,7 @@ $$
 根据以上的分析, 作者提出了相应的解决方案, 即跟踪target的规模$\sigma_t$, 并对lower layer的更新相应乘以$\sigma_t^{-2}$从而消除此处引入的target规模的影响。具体的算法流程在Algorithm 2中给出（其中${\bf W} \leftarrow {\bf W} - \alpha {\boldsymbol \delta} {\boldsymbol g}^\intercal$中${\boldsymbol g}$应该是${\boldsymbol h}$）。
 
 <p align="center">
-<img src="http://img.be-my-only.xyz/learning-values-across-many-orders-of-magnitude-02.png" alt="algorithm 2" width="800">
+<img src="https://img.be-my-only.xyz/learning-values-across-many-orders-of-magnitude-02.png" alt="algorithm 2" width="800">
 </p>
 
 算法2中的核心步骤是${\boldsymbol \theta} \leftarrow {\boldsymbol \theta} - \alpha {\boldsymbol J} ( {\color{red} {\boldsymbol \Sigma} ^{-1} } {\bf W})^\intercal {\color{red} {\boldsymbol \Sigma}^{-1} } {\boldsymbol \delta}$, 其中对${\bf W}$和${\boldsymbol \delta}$分别做了"半标准化"处理, 即将其magnitude置为一。

@@ -67,7 +67,7 @@ $$
 最后附上正十七边形作图的过程动画[^1]:  
 
 <div align="center">
-	<img src="http://img.be-my-only.xyz/heptadecagon-gaussion.gif">
+	<img src="https://img.be-my-only.xyz/heptadecagon-gaussion.gif">
 </div>
 
 高斯真是个天才!

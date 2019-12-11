@@ -26,8 +26,8 @@ tags: ["TeXt", "Jekyll", "Javascript", "GitHub"]
 
 <div style="margin: 0" align="center" markdown="1">
 
-![bright](http://img.be-my-only.xyz/TeXt-copy-to-clipboard-01.gif){: .shadow.rounded}
-![dark](http://img.be-my-only.xyz/TeXt-copy-to-clipboard-02.gif){: .shadow.rounded}
+![bright](https://img.be-my-only.xyz/TeXt-copy-to-clipboard-01.gif){: .shadow.rounded}
+![dark](https://img.be-my-only.xyz/TeXt-copy-to-clipboard-02.gif){: .shadow.rounded}
 
 </div>
 

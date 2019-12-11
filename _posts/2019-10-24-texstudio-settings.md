@@ -36,7 +36,7 @@ tags: ["LaTeX"]
 
 其中`\pagecolor`需要用到`xcolor`包, 而我需要的背景颜色RGB值如上, 通过`\definecolor`指令定义即可。效果如图所示:
 
-![theme-demo](http://img.be-my-only.xyz/texstudio-settings.png)
+![theme-demo](https://img.be-my-only.xyz/texstudio-settings.png)
 {: .shadow.rounded}
 
 **PS**: 相同的方法, 还以用到其他的主题配置, 如深色: [这个](https://robjhyndman.com/hyndsight/dark-themes-for-writing/)和[这个](https://tex.stackexchange.com/a/279321/198472)。

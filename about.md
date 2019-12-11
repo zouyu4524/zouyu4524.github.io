@@ -7,7 +7,7 @@ mathjax: false
 <div id="ID_PHOTO" style="width: 18%;">
 	<div class="card">
 		<div class="card__image">
-			<img class="image" src="http://img.be-my-only.xyz/about-me.jpg" />
+			<img class="image" src="https://img.be-my-only.xyz/about-me.jpg" />
 		</div>
 	</div>
 </div>
@@ -59,7 +59,7 @@ mathjax: false
 
 ### *Love of my life*
 
-![marry](http://img.be-my-only.xyz/marriage.jfif){: .shadow}
+![marry](https://img.be-my-only.xyz/marriage.jfif){: .shadow}
 
 
 <style type="text/css">

@@ -28,4 +28,4 @@ class HelloWorld:
 
 ## Test Insert Image
 
-![marry](http://img.be-my-only.xyz/Hello-World-01.jfif){:.shadow}
+![marry](https://img.be-my-only.xyz/Hello-World-01.jfif){:.shadow}

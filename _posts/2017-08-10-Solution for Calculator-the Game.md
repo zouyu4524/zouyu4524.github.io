@@ -15,13 +15,13 @@ tags: Game MATLAB
 最近玩到了一款手机游戏，名字叫做 Calculator: the Game，游戏玩法很简单，通过给定的操作符在给定的步数以内将原始的数字变换到目标数。起初的一些关卡较为容易，但是后续的关卡短时间内无法想到求解思路，所以产生了“暴力求解”的想法。为了快速实现需求，采用Matlab实现。
 
 <p align="center">
-<img src="http://img.be-my-only.xyz/Solution-for-Calculator-the-Game-01.png" alt="logo">
+<img src="https://img.be-my-only.xyz/Solution-for-Calculator-the-Game-01.png" alt="logo">
 </p>
 
 ## Demo
 
 <p align="center">
-<img src="http://img.be-my-only.xyz/Solution-for-Calculator-the-Game-02.gif" alt="demo">
+<img src="https://img.be-my-only.xyz/Solution-for-Calculator-the-Game-02.gif" alt="demo">
 </p>
 
 

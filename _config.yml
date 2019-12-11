@@ -36,7 +36,7 @@ author:
   type      : person # "person" (default), "organization"
   name      : Yuze Zou
   url       : https://zouyu4524.github.io
-  avatar    : http://img.be-my-only.xyz/avatar.jpg # path or url of avatar image (square)
+  avatar    : https://img.be-my-only.xyz/avatar.jpg # path or url of avatar image (square)
   bio       : Ph.D candidate of EIC at HUST.
   email     : zouyuze@hust.edu.cn
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name

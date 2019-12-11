@@ -32,7 +32,7 @@ tags: ["Linux"]
 为此, 我需要定时启动校园网客户端以保障网络连接, 这个可以通过`crontab`[^3]实现; 而显示器的问题在于, 如果不接, 那么Teamviewer采不到数据无法实用[^1]<sup>, </sup>[^2]。目前的解决方案是手动在下班后将显示器接回旧电脑。参考链接[^1]<sup>, </sup>[^2]中提到的“虚拟显示器”设备已到, 效果不错。
 
 <div style="margin: 0 auto;" align="center" markdown="1">
-<img src="http://img.be-my-only.xyz/remote-connect-server.png" class="shadow rounded" width="200px"><em>虚拟显示器</em>
+<img src="https://img.be-my-only.xyz/remote-connect-server.png" class="shadow rounded" width="200px"><em>虚拟显示器</em>
 </div>
 
 ## 杂项
