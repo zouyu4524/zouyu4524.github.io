@@ -7,9 +7,9 @@
 <!-- MarkdownTOC autolink="true" -->
 
 - [快速开始](#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
-    - [进阶\(本地编译，预览\)](#%E8%BF%9B%E9%98%B6%E6%9C%AC%E5%9C%B0%E7%BC%96%E8%AF%91%EF%BC%8C%E9%A2%84%E8%A7%88)
-        - [依赖项](#%E4%BE%9D%E8%B5%96%E9%A1%B9)
-        - [配置方式](#%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F)
+	- [进阶\(本地编译，预览\)](#%E8%BF%9B%E9%98%B6%E6%9C%AC%E5%9C%B0%E7%BC%96%E8%AF%91%EF%BC%8C%E9%A2%84%E8%A7%88)
+		- [依赖项](#%E4%BE%9D%E8%B5%96%E9%A1%B9)
+		- [配置方式](#%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F)
 - [评论设置](#%E8%AF%84%E8%AE%BA%E8%AE%BE%E7%BD%AE)
 - [ChangeLog](#changelog)
 
@@ -81,6 +81,7 @@ bundle exec jekyll serve
 
 | 日期	| 修改说明 |
 |:---:	|:---	  |
+| 2019/12/12 | 新增blog, Linux科学上网 |
 | 2019/12/11 | 开启七牛云图床HTTPS |
 | 2019/12/09 | 更新图床为七牛云 |
 | 2019/11/22 | 新增blog, 无线路由器桥接 |
