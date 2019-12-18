@@ -210,14 +210,14 @@ defaults:
       type: posts
     values:
       layout: article
-      sharing: true
+      sharing: false
       license: true
       permalink: "/blog/:title/"
       aside:
         toc: true
       show_edit_on_github: true
       show_subscribe: true
-      pageview: true
+      pageview: false
 
 
 ## => Plugins
