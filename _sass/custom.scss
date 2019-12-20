@@ -12,4 +12,26 @@ img {
 	}
 }
 
+#back-top {
+    position: fixed;
+    bottom: 2%;
+    right: 5%;
+    a {
+        display: inline-block;
+        padding: 12px 14px;
+        text-decoration: none;
+        color: #fff;
+        background-color: rgba(170, 170, 170, 0.5);
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        transition: 1s;
+        &:hover {
+            background-color: rgba(119, 119, 119, 0.6 );
+        }
+    }
+}
+
 /* end custom scss snippet */
