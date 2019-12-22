@@ -168,7 +168,7 @@ search:
 ## => Analytics
 ##############################
 analytics:
-  provider: baidu # false (default), "google", "custom"
+  provider: custom # false (default), "google", "custom"
 
   ## Google Analytics
   google:
