@@ -168,12 +168,16 @@ search:
 ## => Analytics
 ##############################
 analytics:
-  provider: google # false (default), "google", "custom"
+  provider: baidu # false (default), "google", "custom"
 
   ## Google Analytics
   google:
     tracking_id : UA-145681813-1 # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
+
+  ## Baidu Analytics
+  baidu:
+    base_id: bf854e25492dc5150a521dd4a5847749
 
 ## => Clipboard
 ##############################
