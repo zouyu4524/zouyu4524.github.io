@@ -37,7 +37,7 @@ default:
     sharing: false
     comment: true
     license: false
-    pageview: false
+    pageview: true
     search: default
 
 sources:
