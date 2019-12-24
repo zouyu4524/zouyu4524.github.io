@@ -2,6 +2,7 @@
 layout: article
 title: 关于我
 mathjax: false
+pageview: false
 ---
 
 <div id="ID_PHOTO" style="width: 18%;">

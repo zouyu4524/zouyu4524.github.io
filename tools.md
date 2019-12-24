@@ -3,6 +3,7 @@ layout: article
 title: 常用软件与工具
 key: useful-tools
 modify_date: 2019-10-22
+pageview: false
 aside:
     toc: true
 ---

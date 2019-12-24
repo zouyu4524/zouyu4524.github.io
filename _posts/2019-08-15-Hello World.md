@@ -1,10 +1,11 @@
 ---
 title: "TeXt: 超赞的Jekyll主题"
+key: hello-TeXt
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
-pageview: false
-tags: TeXt Test
+tags: TeXt
+
 ---
 
 Hello TeXt!<!--more-->
