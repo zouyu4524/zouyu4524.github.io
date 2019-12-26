@@ -26,6 +26,9 @@
           $this.attr('itemprop', 'userInteractionCount').attr('content', view).text(view);
         });
       });
+      pageview.increase('whole-site', '全站访问', function(view) {
+          $("#whole-site-views").text(view);
+      });
     });
   </script>
 
