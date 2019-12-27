@@ -12,7 +12,7 @@
   {%- endif -%}
 
 
-{%- elsif page.layout == "article" -%}
+{%- elsif page.layout == "article" or page.layout == "archive" -%}
 
   {%- if jekyll.environment != "development" and
     jekyll.environment != "beta" -%}

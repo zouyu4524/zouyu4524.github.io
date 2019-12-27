@@ -11,6 +11,7 @@
 
   <script>
     {%- include pageview-providers/leancloud/leancloud.js -%}
+    {%- include pageview-providers/leancloud/unique-views.js -%}
   </script>
   <script>
     window.Lazyload.js(['{{ _sources.jquery }}', '{{ _sources.leancloud_js_sdk}}'], function() {
@@ -29,6 +30,17 @@
       pageview.increase('whole-site', '全站访问', function(view) {
           $("#whole-site-views").text(view);
       });
+      var user = getCookie('be-my-only.xyz');
+      if ('' == user) {
+        setCookie('be-my-only.xyz', uuidv4(), 30);
+        pageview.increase('unique-views', '访问用户数', function(view) {
+          $("#unique-views").text(view);
+        });
+      } else {
+        pageview.get('unique-views', function(view) {
+          $("#unique-views").text(view);
+        });
+      }
     });
   </script>
 
