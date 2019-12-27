@@ -14,12 +14,11 @@ img {
 
 #back-top {
     position: fixed;
-    bottom: 2%;
-    right: 5%;
+    bottom: 20px;
+    right: 20px;
     a {
         display: inline-block;
         padding: 12px 14px;
-        text-decoration: none;
         color: #fff;
         background-color: rgba(170, 170, 170, 0.5);
         -webkit-border-radius: 7px;
@@ -29,7 +28,7 @@ img {
         -moz-transition: 1s;
         transition: 1s;
         &:hover {
-            background-color: rgba(119, 119, 119, 0.6 );
+            background-color: rgba(119, 119, 119, 0.6);
         }
     }
 }
