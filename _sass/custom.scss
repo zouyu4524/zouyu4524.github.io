@@ -33,4 +33,12 @@ img {
     }
 }
 
+.navigation {
+    & > ul {
+        & > li {
+            min-width: max-content;
+        }
+    }
+}
+
 /* end custom scss snippet */
