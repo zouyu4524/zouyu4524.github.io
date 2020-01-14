@@ -2,7 +2,7 @@
 layout: article
 title: 常用软件与工具
 key: useful-tools
-modify_date: 2019-10-22
+modify_date: 2019-01-13
 pageview: false
 aside:
     toc: true
@@ -88,6 +88,7 @@ aside:
 
 - [Screen2Gif](https://www.screentogif.com/): 录屏并转换为GIF动图, 力荐
 - [Sublime Text 3](https://www.sublimetext.com/download): 文本编辑器, 简易的IDE, 个人站点用其编辑
+- [Samba](https://www.samba.org/): Linux、Unix操作系统与Windows间实现文件共享
 
 ## T
 
@@ -108,6 +109,7 @@ aside:
 ## W
 
 - [WSL 2](https://docs.microsoft.com/en-us/windows/wsl/wsl2-install): Windows Subsystem for Linux 2, Win10 Linux子系统
+- [WinSCP](https://winscp.net/eng/index.php): Windows平台好用的文件传输客户端, 支持SSH、SCP等
 
 ## X
 
