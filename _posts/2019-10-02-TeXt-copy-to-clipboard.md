@@ -5,13 +5,15 @@ title: "为博客添加代码块一键复制功能"
 author: Yuze Zou
 show_author_profile: true
 clipboard: true
-modify_date: 2019-10-06
+modify_date: 2020-01-29
 tags: ["TeXt", "Jekyll", "Javascript", "GitHub"]
 ---
 
 参与开源第一步! 第一次的Pull Request, 献给TeXt。
 
 <!--more-->
+
+<div style="margin: 0 auto;" align="justify" markdown="1">
 
 ## 前言
 
@@ -57,7 +59,7 @@ var snippets = document.querySelectorAll('pre');
 {: .language-javascript}
 </div>
 
-其中`document.querySelectorAll('pre')`[^query]负责查找代码块, 然后通过`closest('.snippet')`[^closest]判断找到的代码块任意父级是否为`snippet` class, 如此便可在博文中控制每个代码块是否提供一键复制的功能了。即: 如果按照原来的插入代码块的方式仍然不提供一键复制功能, 而如果需要提供该功能, 可以在代码块外套上一层`snippet`, 如下:  
+其中`document.querySelectorAll('pre')`[^query]负责查找代码块, 然后通过`closest('.snippet')`[^closest]判断找到的代码块任意父级是否为`snippet` class, 如此便可在博文中控制每个代码块是否提供一键复制的功能了。即: 如果按照原来的插入代码块的方式仍然不提供一键复制功能, 而如果需要提供该功能, 可以在代码块外套上一层`snippet`(目前的commit中已改为`copyable`), 如下:  
 
 <div class="snippet" markdown="1">
 
@@ -117,7 +119,7 @@ jekyll-TeXt-theme
 - `clipboard.html`与`copy-to-clipboard.html`放置于`_includes`下, 分别用于加载外部`clipboard.js`和判断是否需要开启此功能; 
 - `page.html` 添加了执行`copy-to-clipboard.html`的指令; 
 - `_copy-to-clipboard.scss`[^note]放置于`_sass/additional`下, 指定了与功能相关组件的样式; 相应在`main.scss`中引入此样式文件; 
-- `clippy.svg` 放置于`assets`下, 脚本`copy-to-clipboard.js`中动态创建的按钮图片路径指向此文件; 
+- ~~`clippy.svg` 放置于`assets`下, 脚本`copy-to-clipboard.js`中动态创建的按钮图片路径指向此文件;~~
 - `_config.yml` 中预设了`clipboard`变量为`false`。
 
 ### Tips
@@ -128,6 +130,8 @@ jekyll-TeXt-theme
 ## 总结
 
 通过本次PR, 对TeXt项目的理解更进一步, 对Jekyll编译逻辑更加清晰, 对Liquid语法更熟悉。
+
+</div>
 
 [^query]: [Element.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector)
 [^closest]: [Element.closest()](https://developer.mozilla.org/en-US/docs/Web/API/Element/closest)

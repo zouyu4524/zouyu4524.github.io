@@ -11,6 +11,8 @@ tags: ["PyTorch", "Python", "Deep Reinforcement Learning"]
 
 通过PyTorch实现Pop-Art算法。<!--more-->
 
+<div style="margin: 0 auto;" align="justify" markdown="1">
+
 ## 前言
 
 Learning-values-across-many-orders-of-magnitude[^1]一文中提出了Pop-Art算法以解决深度强化学习(Deep reinforcement learning)中target值跨度多个量级而造成的学习缓慢的问题。其中Pop与Art分别表示**P**reserving **O**utputs **P**ercisely以及**A**daptive **R**escaling **T**arget, 即在保障已历经样本输出不变的前提下自适应缩放target值的算法。更为详尽的介绍在[论文翻译: Learning values across many orders of magnitude](/blog/learning-values-across-many-orders-of-magnitude.html)中已给出, 在此不再赘述。本文的目的在于复现论文中提到的算法, 以测试其有效性, 并为适用于自己的问题服务。本文通过PyTorch实现, 结构如下: 首先验证PyTorch的核心组件以测试模型拆分的等效性(这将作为后续的基础); 接着实现PopArt算法与Normalized SGD算法(论文中的算法1, 2)并验证二者的等效性(论文2.3节的statement); 最后通过复现第三章中的示例(包括另外两种对比算法)以期复现论文中的Fig. 1a。
@@ -301,6 +303,8 @@ def forward(self, x, y):
 
 与论文中的图对比可以发现, PopArt, SGD算法的结果基本一致, ART算法的趋势也基本一致, 但绝对数值上略有区别。
 {: .success}
+
+</div>
 
 [^1]: [Learning-values-across-many-orders-of-magnitude](https://papers.nips.cc/paper/6076-learning-values-across-many-orders-of-magnitude.pdf)
 [^2]: [What is the recommended way to re-assign/update values in a variable (or tensor)?](https://discuss.pytorch.org/t/what-is-the-recommended-way-to-re-assign-update-values-in-a-variable-or-tensor/6125)

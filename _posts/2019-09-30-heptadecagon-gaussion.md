@@ -14,7 +14,11 @@ tags: ["Geometry", "Interests"]
 
 <!--more-->
 
+## 视频
+
 <div>{% include extensions/dual-player.html id_y='I2pf3gjz5QU' id_b='73934121' %}</div>
+
+## 小结
 
 **简单总结如下**:  
 
@@ -63,6 +67,9 @@ $$
 & 2\sqrt{ 17 + 3\sqrt{17} - \sqrt{170 + 38\sqrt{17} } }.
 \end{aligned}
 $$
+
+
+## 正十七边形
 
 最后附上正十七边形作图的过程动画[^1]:  
 

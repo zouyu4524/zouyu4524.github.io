@@ -23,13 +23,13 @@ $\LaTeX$相关问题与解决方式, 不定期更新。<!--more-->
 在windows安装ctex合集就能搞定日常需要使用的各种tex环境与包, 相应的在Linux上需要安装texlive以配置latex的环境。通过以下命令安装: 
 
 
-```
+```bash
 sudo apt-get install texlive
 ```
 
 该命令将安装常用的tex环境和包, 但是仍然缺若干的package或字体, 例如: `algorithm`, `multirow`以及`bbm`, 相应的可以通过安装`texlive-science`[^2], `texlive-latex-extra`[^3]以及`texlive-fonts-extra`[^1]补充。
 
-此后, tex文件可以正常编译, 但是可能出现无法显示参考文献的情况, 原因在于还缺少`texlive-publishers`, 需要相应安装[^6]。
+此后, tex文件可以正常编译, 但是可能出现无法显示参考文献的情况, 原因是还缺少`texlive-publishers`, 需要相应安装[^6]。
 
 ### Linux上完全卸载texlive
 

@@ -9,9 +9,12 @@ mermaid: true
 tags: ["PyTorch", "Python", "Machine Learning", "backward"]
 ---
 
+本文简要分析PyTorch`backward`使用中遇到的in-place赋值问题, 以作记录。<!--more-->
+
+<div style="margin: 0 auto;" align="justify" markdown="1">
+
 ## 前言
 
-本文简要分析PyTorch`backward`使用中遇到的in-place赋值问题, 以作记录。  <!--more-->
 `backward`作为PyTorch的重要函数, 用于自动计算loss对计算图中所有`requires_grad=True`的叶子节点的梯度。日常使用简洁明了, 但偶尔也可能有"奇怪"的需求, 例如在复现[论文](https://papers.nips.cc/paper/6076-learning-values-across-many-orders-of-magnitude.pdf)算法2(Normalized SGD)更新底层网络(**Lower Layers**)参数(${\boldsymbol \theta}$)时。其更新方式定义如下:  
 
 $$
@@ -66,7 +69,7 @@ $$
 
 以上代码中`z.backward()`计算了$\partial z / \partial x$和$\partial z / \partial x$, 打印的结果如下:  
 
-```
+```python
 tensor([4.])
 tensor([1.])
 ```
@@ -78,7 +81,7 @@ $\partial z / \partial x = 2x w = 4$, 而$\partial z / \partial w = y = x^2 = 1$
 <script src="https://gist.github.com/zouyu4524/26d98491444ea896203ab71a8e36f0a3.js?file=pytorch_backward_02.py"></script>
 
 这一步中, 试着修改一下`w.data`将其乘以2, 企图得到不同的结果。实际上, 打印的结果如下:  
-```
+```python
 tensor([4.])
 tensor([1.])
 ```
@@ -90,14 +93,14 @@ tensor([1.])
 
 这一步与上一步的唯一区别在于对`w.data`修改方式变为了`w.data *= 2`, 即**in-place**赋值方式[^1], 这一概念并非PyTorch专有, 而是程序设计中的通用称呼。这一步所得到的输出如下:  
 
-```
+```python
 tensor([8.])
 tensor([1.])
 ```
 
 正是预期的结果。分析两种赋值方式的区别在于:  
 
-```
+```python
 w.data = w.data * 2
 ```
 
@@ -120,7 +123,7 @@ style C fill:yellow, stroke:#333
 如图所示, 实际上开辟了新的内存空间, 计算**新的**`w.data`, 而原本`w.data`所指向的内存地址所存放的结果仍然为原值。
 
 但对于**in-place**的赋值方式则不同: 
-```
+```python
 w.data *= 2
 ```
 
@@ -141,5 +144,7 @@ style B fill:pink,stroke:#333
 * `backward`计算梯度时通过**地址**获取相应的所需的值, 而非**标签**(变量名称, 如`w.data`), 一般情况下这两者相等(标签指向相应的值), 所以看不出差别。  
 * **in-place**赋值不新开辟内存空间, 而是在原址上修改值。  
 * `tensor.data`可以获取`tensor`中的数据, 且对`tensor.data`操作时不会被`autograd`所记录, 即不会反映到`backward`中。
+
+</div>
 
 [^1]: [What is the recommended way to re-assign/update values in a variable (or tensor)?](https://discuss.pytorch.org/t/what-is-the-recommended-way-to-re-assign-update-values-in-a-variable-or-tensor/6125)

@@ -10,6 +10,8 @@ tags: ["Deep Reinforcement Learning", "Deep Learning", "翻译"]
 
 Hado van Hasselt, Arthur Guez, Matteo Hessel, Volodymyr Mnih, David Silver. "Learning values across many orders of magnitude." In *Advances in Neural Information Processing Systems*, pp. 4287-4295. 2016. <!--more-->[[pdf](https://arxiv.org/pdf/1602.07714)]
 
+<div style="margin: 0 auto;" align="justify" markdown="1"> 
+
 ## 符号系统
 
 | 符号 	| 含义 | 符号 | 含义 |
@@ -85,7 +87,7 @@ $$
 以上给出了特例, 即当scale和shift均为标量。按以上规则更新了标准化参数后, 根据**Proposition 1**可知原来的输出在新的标准化参数下并不会改变, 而新的训练数据通过新的标准化参数处理后即可用于对函数拟合模型(即$h_ { {\boldsymbol \theta} }$)的训练。
 
 <p align="center">
-<img src="https://img.be-my-only.xyz/learning-values-across-many-orders-of-magnitude-01.png" alt="algorithm 1" width="800">
+<img src="https://img.be-my-only.xyz/learning-values-across-many-orders-of-magnitude-01.png" alt="algorithm 1" width="800" class="rounded shadow">
 </p>
 
 > Algorithm 1 is an example implementation of SGD with Pop-Art for a squared loss. It can be generalized easily to any other loss by changin the definition of ${\boldsymbol \delta}$. Notice that ${\bf W}$ and ${\boldsymbol b}$ are updated twice: first to adapt to the new scale and shift to preserve the outputs of the function, and then by SGD. The order of these updates is important because it allows us to use the new normalization immediately in the subsequent SGD update.
@@ -168,7 +170,7 @@ $$
 根据以上的分析, 作者提出了相应的解决方案, 即跟踪target的规模$\sigma_t$, 并对lower layer的更新相应乘以$\sigma_t^{-2}$从而消除此处引入的target规模的影响。具体的算法流程在Algorithm 2中给出（其中${\bf W} \leftarrow {\bf W} - \alpha {\boldsymbol \delta} {\boldsymbol g}^\intercal$中${\boldsymbol g}$应该是${\boldsymbol h}$）。
 
 <p align="center">
-<img src="https://img.be-my-only.xyz/learning-values-across-many-orders-of-magnitude-02.png" alt="algorithm 2" width="800">
+<img src="https://img.be-my-only.xyz/learning-values-across-many-orders-of-magnitude-02.png" alt="algorithm 2" width="800" class="rounded shadow">
 </p>
 
 算法2中的核心步骤是${\boldsymbol \theta} \leftarrow {\boldsymbol \theta} - \alpha {\boldsymbol J} ( {\color{red} {\boldsymbol \Sigma} ^{-1} } {\bf W})^\intercal {\color{red} {\boldsymbol \Sigma}^{-1} } {\boldsymbol \delta}$, 其中对${\bf W}$和${\boldsymbol \delta}$分别做了"半标准化"处理, 即将其magnitude置为一。
@@ -191,7 +193,7 @@ $$
 
 再次强调以上Proposition的重要性, 保障了两个算法间的对偶性。另一方面, 算法2中的top layer并未进行标准化处理, 从而保留了其适应target的调整空间。Proposition表明Pop-Art算法本身可以作为对其他优化算法的一个补充。
 
-**小结**: 本节提出了重要的Proposition, 阐述了算法2和算法1的等效性, 因此Pop-Art算法可以作为对其他优化算法的一个补充。
+**小结**: 本节提出了重要的Proposition, 阐述了算法2和算法1的等效性, 因此**Pop-Art**可以作为对其他优化算法的一个补充。
 
 ## 总结与思考
 
@@ -200,3 +202,5 @@ $$
 **疑问**: 强化学习算法中多为mini-batch的训练模式, 那么在随机选取的batch中可能出现如下的情况: $[ a_1, \ldots, a_n, b_1, \ldots, b_m]$。其中$a$, $b$序列分别在不同的范围, 同组中彼此差异仅体现在小数点后3位, 而两组间的差异为个位数。在这种情况下, 标准化处理是否能够有效区分组内的差异呢？此batch的处理是否应该将样本逐一输入进行处理？
 
 **此疑问在文章的附加部分中有所涉及, 即需要替换"Art"部分。**
+
+</div>
