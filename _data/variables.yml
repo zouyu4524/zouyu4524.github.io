@@ -65,3 +65,15 @@ sources:
     mathjax: 'https://unpkg.com/mathjax@2.7.4/unpacked/MathJax.js?config=TeX-MML-AM_CHTML'
     mermaid: 'https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.min.js'
     clipboard: 'https://unpkg.com/clipboard@2/dist/clipboard.min.js'
+  staticfile:
+    font_awesome: 'https://cdn.staticfile.org/font-awesome/5.12.0-1/css/all.css'
+    jquery: 'https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js'
+    leancloud_js_sdk: '//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js'
+    chart: 'https://cdn.staticfile.org/Chart.js/2.7.2/Chart.min.js'
+    gitalk:
+      js: 'https://cdn.staticfile.org/gitalk/1.2.2/gitalk.min.js'
+      css: 'https://cdn.staticfile.org/gitalk/1.2.2/gitalk.css'
+    valine: 'https://cdn.staticfile.org/valine/1.3.10/Valine.min.js'
+    mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.4/unpacked/MathJax.js?config=TeX-MML-AM_CHTML'
+    mermaid: 'https://cdn.staticfile.org/mermaid/8.0.0-rc.8/mermaid.min.js'
+    clipboard: 'https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js'
