@@ -2,6 +2,7 @@
 layout: article
 key: latex-notes
 title: LaTeX相关笔记
+modify_date: 2020-01-30
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
@@ -10,13 +11,24 @@ tags: [LaTeX]
 
 $\LaTeX$相关问题与解决方式, 不定期更新。<!--more-->
 
-### IEEEtran会议模板启用`\thanks`
+## 公式相关
 
-默认情况下, IEEEtran会议模板禁用了`\thanks`, `\IEEEmembership`等标识, 导致编译时被略去, 可以通过在`\begin{document}`前加入`\IEEEoverridecommandlockouts`消去禁用[^4]。
+### $\max$下换行
 
-### TexStudio生成dvi文件
+- 示例:  
 
-默认情况下, texstudio采用pdflatex编译器, 将由tex文件生成pdf文件。将编译器修改为latex即可默认生成dvi文件。
+$$
+\max_{\substack{\alpha, \beta, \gamma, \\\\ \phi, \psi} } \quad \text{Objective} \nonumber
+$$
+
+- 源码:  
+
+```latex
+\max_{\substack{\alpha, \beta, \gamma, \\ \phi, \psi} } \quad \text{Objective}
+```
+用到的语法是: `\substack`[^substack], 需要引入的包为: `amsmath`。
+
+## 安装
 
 ### Linux上安装texlive
 
@@ -33,7 +45,7 @@ sudo apt-get install texlive
 
 ### Linux上完全卸载texlive
 
-~~~
+~~~bash
 sudo apt-get purge texlive*
 sudo rm -rf /usr/local/texlive/* and rm -rf ~/.texlive*
 sudo rm -rf /usr/local/share/texmf
@@ -43,7 +55,17 @@ sudo apt-get remove tex-common --purge
 rm -rf ~/.texlive
 find -L /usr/local/bin/ -lname /usr/local/texlive/*/bin/* | xargs rm
 ~~~
-{: .language-bash}
+
+## 杂项
+
+### IEEEtran会议模板启用`\thanks`
+
+默认情况下, IEEEtran会议模板禁用了`\thanks`, `\IEEEmembership`等标识, 导致编译时被略去, 可以通过在`\begin{document}`前加入`\IEEEoverridecommandlockouts`消去禁用[^4]。
+
+### TexStudio生成dvi文件
+
+默认情况下, texstudio采用pdflatex编译器, 将由tex文件生成pdf文件。将编译器修改为latex即可默认生成dvi文件。
+
 
 [^1]: [Installing bbm.sty in linux](https://tex.stackexchange.com/a/300107)
 [^2]: [How to install the algorithms package?](https://tex.stackexchange.com/a/28632)
@@ -51,3 +73,4 @@ find -L /usr/local/bin/ -lname /usr/local/texlive/*/bin/* | xargs rm
 [^4]: [\thanks won't appear in IEEEtran](https://tex.stackexchange.com/a/53548)
 [^5]: [How to remove everything related to TeX Live for fresh install on Ubuntu?](https://tex.stackexchange.com/a/95502)
 [^6]: [Can't make citations on Ubuntu](https://www.reddit.com/r/LaTeX/comments/2tzg07/cant_make_citations_on_ubuntu/)
+[^substack]: [How to break line of subscript under min?](https://tex.stackexchange.com/a/182675/198472)
