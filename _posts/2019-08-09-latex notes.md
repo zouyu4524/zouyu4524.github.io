@@ -2,14 +2,17 @@
 layout: article
 key: latex-notes
 title: LaTeX相关笔记
-modify_date: 2020-01-30
+modify_date: 2020-02-01
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
+clipboard: true
 tags: [LaTeX]
 ---
 
 $\LaTeX$相关问题与解决方式, 不定期更新。<!--more-->
+
+<div style="margin: 0 auto;" align="justify" markdown="1">
 
 ## 公式相关
 
@@ -41,7 +44,7 @@ sudo apt-get install texlive
 
 该命令将安装常用的tex环境和包, 但是仍然缺若干的package或字体, 例如: `algorithm`, `multirow`以及`bbm`, 相应的可以通过安装`texlive-science`[^2], `texlive-latex-extra`[^3]以及`texlive-fonts-extra`[^1]补充。
 
-此后, tex文件可以正常编译, 但是可能出现无法显示参考文献的情况, 原因是还缺少`texlive-publishers`, 需要相应安装[^6]。
+此后, tex文件可以正常编译, 但可能出现无法显示参考文献的情况, 原因是还缺少`texlive-publishers`, 需要相应安装[^6]。
 
 ### Linux上完全卸载texlive
 
@@ -64,8 +67,31 @@ find -L /usr/local/bin/ -lname /usr/local/texlive/*/bin/* | xargs rm
 
 ### TexStudio生成dvi文件
 
-默认情况下, texstudio采用pdflatex编译器, 将由tex文件生成pdf文件。将编译器修改为latex即可默认生成dvi文件。
+默认情况下, texstudio采用`pdflatex`编译器, 将由tex文件生成pdf文件。将编译器修改为`latex`即可默认生成dvi文件。
 
+需要注意的是`latex`编译器对`.pdf`格式插图支持不如`pdflatex`[^size], 最好使用`.eps`插图。
+{: .error}
+
+### PDF插图转eps格式
+
+接上一条, 若插图为pdf格式, 需要转为eps格式。Windows可以使用Adobe acrobat另存为选择eps格式即可。Linux可以使用如下脚本[^pdf2eps], 将其保存为`pdf2eps`:   
+
+```bash
+#!/bin/sh
+# $Id: pdf2eps,v 0.01 2005/10/28 00:55:46 Herbert Voss Exp $
+# Convert PDF to encapsulated PostScript.
+# usage:
+# pdf2eps <page number> <pdf file without ext>
+
+pdfcrop "$2.pdf" "$2-temp.pdf"
+pdftops -f $1 -l $1 -eps "$2-temp.pdf" "$2.eps"
+rm  "$2-temp.pdf"
+```
+{: .snippet}
+
+> 其中用到`pdfcrop`与`pdftops`, `pdfcrop`是`texlive-extra-utils`组件之一。
+
+</div>
 
 [^1]: [Installing bbm.sty in linux](https://tex.stackexchange.com/a/300107)
 [^2]: [How to install the algorithms package?](https://tex.stackexchange.com/a/28632)
@@ -74,3 +100,5 @@ find -L /usr/local/bin/ -lname /usr/local/texlive/*/bin/* | xargs rm
 [^5]: [How to remove everything related to TeX Live for fresh install on Ubuntu?](https://tex.stackexchange.com/a/95502)
 [^6]: [Can't make citations on Ubuntu](https://www.reddit.com/r/LaTeX/comments/2tzg07/cant_make_citations_on_ubuntu/)
 [^substack]: [How to break line of subscript under min?](https://tex.stackexchange.com/a/182675/198472)
+[^size]: [Cannot determine size of graphic](https://tex.stackexchange.com/a/17737/198472)
+[^pdf2eps]: [How to convert PDF to EPS?](https://tex.stackexchange.com/q/20883/198472)
