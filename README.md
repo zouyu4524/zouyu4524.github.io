@@ -81,6 +81,7 @@ bundle exec jekyll serve
 
 | 日期	| 修改说明 |
 |:---:	|:---	  |
+| 2020/02/01 | 新增blog, 安装百度网盘Linux版 | 
 | 2020/01/22 | 新增blog, MATLAB绘图小记4则 |
 | 2020/01/13 | 新增blog, SSH隧道使用Samba |
 | 2019/12/27 | 新增blog, 实现站点PV、UV统计 |
