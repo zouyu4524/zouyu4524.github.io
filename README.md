@@ -7,9 +7,9 @@
 <!-- MarkdownTOC autolink="true" -->
 
 - [快速开始](#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
-    - [进阶\(本地编译，预览\)](#%E8%BF%9B%E9%98%B6%E6%9C%AC%E5%9C%B0%E7%BC%96%E8%AF%91%EF%BC%8C%E9%A2%84%E8%A7%88)
-        - [依赖项](#%E4%BE%9D%E8%B5%96%E9%A1%B9)
-        - [配置方式](#%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F)
+	- [进阶\(本地编译，预览\)](#%E8%BF%9B%E9%98%B6%E6%9C%AC%E5%9C%B0%E7%BC%96%E8%AF%91%EF%BC%8C%E9%A2%84%E8%A7%88)
+		- [依赖项](#%E4%BE%9D%E8%B5%96%E9%A1%B9)
+		- [配置方式](#%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F)
 - [评论设置](#%E8%AF%84%E8%AE%BA%E8%AE%BE%E7%BD%AE)
 - [ChangeLog](#changelog)
 
@@ -71,6 +71,12 @@ bundle exec jekyll serve
 
 首先需要在`_config.yml`文件中配置`comments`下的`provider`, 以`gitalk`为例。接下来需要相应配置`gitalk`的各个参数, 注释中有详述。其原理为, 评论内容自动连接到Github指定仓库, 并在该仓库创建Issue。从而将评论内容填入其中。为了实现这个功能, 还需要创建一个GitHub的OAuth application, 创建[链接](https://github.com/settings/applications/new)。其中名称可以填写为主页repo, URL和callback URL一致, 均为`https://USERNAME.github.io`（或自定义的域名）。创建后就可以得到相应的Client ID以及Client Secret。
 
+[**Update**, 2020-02-06]: 由于GitHub的安全策略更改, 1.5.0版前的gitalk js文件逻辑将导致Github发送警告邮件:  
+> [GitHub API] Deprecation notice for authentication via URL query parameters  
+
+*暂时解决此问题的方案由[@geektutu](https://github.com/geektutu)提供: [GitHub app API query parameter deprecation](https://github.com/gitalk/gitalk/issues/343#issuecomment-581758733)。*
+
+
 此外, 需要开启评论功能的文章需要为其设置唯一的`key`属性, 为字符串, 以字母开头（**不需要引号**）, Gitalk将会以此`key`在相应的评论所创建的issue上打上标签。
 
 *本地通过Jekyll编译时无法看到评论功能。*
@@ -81,6 +87,7 @@ bundle exec jekyll serve
 
 | 日期	| 修改说明 |
 |:---:	|:---	  |
+| 2020/02/06 | 修复由GitHub API弃用导致的Gitalk组件产生的警告邮件提醒问题， credit to [@geektutu](https://github.com/geektutu) |
 | 2020/02/01 | 新增blog, 安装百度网盘Linux版 | 
 | 2020/01/22 | 新增blog, MATLAB绘图小记4则 |
 | 2020/01/13 | 新增blog, SSH隧道使用Samba |

@@ -71,8 +71,8 @@ sources:
     leancloud_js_sdk: '//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js'
     chart: 'https://cdn.staticfile.org/Chart.js/2.7.2/Chart.min.js'
     gitalk:
-      js: 'https://cdn.staticfile.org/gitalk/1.2.2/gitalk.min.js'
-      css: 'https://cdn.staticfile.org/gitalk/1.2.2/gitalk.css'
+      js: '/assets/scripts/gitalk.min.js'
+      css: 'https://cdn.staticfile.org/gitalk/1.5.0/gitalk.css'
     valine: 'https://cdn.staticfile.org/valine/1.3.10/Valine.min.js'
     mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.4/unpacked/MathJax.js?config=TeX-MML-AM_CHTML'
     mermaid: 'https://cdn.staticfile.org/mermaid/8.0.0-rc.8/mermaid.min.js'
