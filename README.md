@@ -76,6 +76,7 @@ bundle exec jekyll serve
 
 *暂时解决此问题的方案由[@geektutu](https://github.com/geektutu)提供: [GitHub app API query parameter deprecation](https://github.com/gitalk/gitalk/issues/343#issuecomment-581758733)。*
 
+[**Update**, 2020-02-09]: 目前gitalk已经修复了该问题, 升级版本到1.5.2即可。
 
 此外, 需要开启评论功能的文章需要为其设置唯一的`key`属性, 为字符串, 以字母开头（**不需要引号**）, Gitalk将会以此`key`在相应的评论所创建的issue上打上标签。
 
@@ -87,7 +88,7 @@ bundle exec jekyll serve
 
 | 日期	| 修改说明 |
 |:---:	|:---	  |
-| 2020/02/06 | 修复由GitHub API弃用导致的Gitalk组件产生的警告邮件提醒问题， credit to [@geektutu](https://github.com/geektutu) |
+| 2020/02/06 | 修复由GitHub API弃用导致的Gitalk组件产生的警告邮件提醒问题, credit to [@geektutu](https://github.com/geektutu) |
 | 2020/02/01 | 新增blog, 安装百度网盘Linux版 | 
 | 2020/01/22 | 新增blog, MATLAB绘图小记4则 |
 | 2020/01/13 | 新增blog, SSH隧道使用Samba |
