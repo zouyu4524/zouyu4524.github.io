@@ -88,6 +88,7 @@ bundle exec jekyll serve
 
 | 日期	| 修改说明 |
 |:---:	|:---	  |
+| 2020/02/20 | 新增blog, 读博心路历程 |
 | 2020/02/06 | 修复由GitHub API弃用导致的Gitalk组件产生的警告邮件提醒问题, credit to [@geektutu](https://github.com/geektutu) |
 | 2020/02/01 | 新增blog, 安装百度网盘Linux版 | 
 | 2020/01/22 | 新增blog, MATLAB绘图小记4则 |
