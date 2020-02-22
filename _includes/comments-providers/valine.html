@@ -8,7 +8,8 @@
 {%- assign _VALINE_META = site.comments.valine.meta -%}
 
 
-{%- if _VALINE_APP_ID and
+{%- if page.key and
+  _VALINE_APP_ID and 
   _VALINE_APP_KEY -%}
 
 <div id="vcomments"></div>
@@ -30,8 +31,8 @@
       _config.placeholder = '{{ _VALINE_PLACEHOLDER }}';
     {%- endif -%}
     {%- assign _page_lang_slice =  page.lang | slice: 0, 2 -%}
-    {%- if _page_lang_slice != 'zh'  -%}
-      _config.lang = 'en';
+    {%- if _page_lang_slice != 'en'  -%}
+      _config.lang = 'zh-cn';
     {%- endif -%}  
     {%- if _VALINE_VISITOR -%}
       _config.visitor = 'true';
