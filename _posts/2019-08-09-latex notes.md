@@ -2,7 +2,7 @@
 layout: article
 key: latex-notes
 title: LaTeX相关笔记
-modify_date: 2020-02-01
+modify_date: 2020-03-10
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
@@ -15,6 +15,30 @@ $\LaTeX$相关问题与解决方式, 不定期更新。<!--more-->
 <div style="margin: 0 auto;" align="justify" markdown="1">
 
 ## 公式相关
+
+### 算法换行保持缩进
+
+在使用`algorithm`包编辑算法时, 偶尔会需要进行换行, 但不增加行号, 在此记录比较简便的方法[^wrap]。
+
+- 示例:
+
+```latex
+\begin{algorithm}
+    \begin{algorithmic}[1]
+        \State \hspace{5mm} Here is a sentence that needs to be broken into new line \newline
+               \hspace*{5mm} while maintaining indent.
+    \end{algorithmic}
+\end{algorithm}
+```
+{: .snippet}
+
+效果如图所示: 
+
+<div style="margin: 0 auto;" align="center">
+    <img src="https://img.be-my-only.xyz/latex-notes-01.png" alt="wrap" width="80%" class="shadow rounded">
+</div>
+
+其中用到的关键词包括: `\newline`以及`\hspace*{}`。两者搭配使用即可。`\newline`负责换行并保持行号不自增（如果是`\\`会使行号自增）; 而`\hspace*{}`负责缩进控制, 务必加上`*`, 以告诉编译器此处缩进有效, 否则缩进将被无视[^hspace]。
 
 ### $\max$下换行
 
@@ -91,6 +115,23 @@ rm  "$2-temp.pdf"
 
 > 其中用到`pdfcrop`与`pdftops`, `pdfcrop`是`texlive-extra-utils`组件之一。
 
+### Unknown document class (or package)
+
+论文写作时如在IEEEtran模板下使用`caption`包, 大概率会出现如下警告提示:   
+
+```
+Unknown document class (or package),
+(caption)   standard defaults will be used.
+See the caption package documentation for explanation.
+```
+
+其原因在于[^caption]:  
+
+> This warning appears when your document does not have definition of \@makecaption command.
+
+解决办法在[这里](https://tex.stackexchange.com/a/348152/198472)给出, 不再赘述。
+
+
 </div>
 
 [^1]: [Installing bbm.sty in linux](https://tex.stackexchange.com/a/300107)
@@ -102,3 +143,6 @@ rm  "$2-temp.pdf"
 [^substack]: [How to break line of subscript under min?](https://tex.stackexchange.com/a/182675/198472)
 [^size]: [Cannot determine size of graphic](https://tex.stackexchange.com/a/17737/198472)
 [^pdf2eps]: [How to convert PDF to EPS?](https://tex.stackexchange.com/q/20883/198472)
+[^wrap]: [Include a line break in algorithmic while maintaining indentation](https://tex.stackexchange.com/a/444471/198472)
+[^hspace]: [\\hspace vs. \\hspace\*](https://tex.stackexchange.com/a/89090/198472)
+[^caption]: [Package caption Warning: Unsupported document class](https://tex.stackexchange.com/a/348152/198472)
