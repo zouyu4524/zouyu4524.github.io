@@ -69,6 +69,8 @@ bundle exec jekyll serve
 
 ## 评论设置
 
+### Gitalk
+
 首先需要在`_config.yml`文件中配置`comments`下的`provider`, 以`gitalk`为例。接下来需要相应配置`gitalk`的各个参数, 注释中有详述。其原理为, 评论内容自动连接到Github指定仓库, 并在该仓库创建Issue。从而将评论内容填入其中。为了实现这个功能, 还需要创建一个GitHub的OAuth application, 创建[链接](https://github.com/settings/applications/new)。其中名称可以填写为主页repo, URL和callback URL一致, 均为`https://USERNAME.github.io`（或自定义的域名）。创建后就可以得到相应的Client ID以及Client Secret。
 
 ~~[**Update**, 2020-02-06]: 由于GitHub的安全策略更改, 1.5.0版前的gitalk js文件逻辑将导致Github发送警告邮件:~~  
@@ -80,16 +82,21 @@ bundle exec jekyll serve
 
 [**Update**, 2020-02-22]: 考虑到GitHub访问受限的问题, 将评论系统更换为Valine(LeanCloud backend)。
 
+**注意**: 相应主页的repo需要开启ISSUE功能, 否则无法开启评论。
+
+### Valine
+
+由于Gitalk基于GitHub, 在国内访问受限, 考虑将评论系统切换为Valine, 具体的配置过程可以参考: [Valine-TeXt](https://tianqi.name/jekyll-TeXt-theme/docs/en/configuration#valine)。
+
 此外, 需要开启评论功能的文章需要为其设置唯一的`key`属性, 为字符串, 以字母开头（**不需要引号**）, Gitalk将会以此`key`在相应的评论所创建的issue上打上标签。
 
 *本地通过Jekyll编译时无法看到评论功能。*
-
-**注意**: 相应主页的repo需要开启ISSUE功能, 否则无法开启评论。
 
 ## ChangeLog
 
 | 日期	| 修改说明 |
 |:---:	|:---	  |
+| 2020/03/26 | 新增blog, MiKTeX epstopdf字体问题 |
 | 2020/02/22 | 修改评论系统为Valine |
 | 2020/02/20 | 新增blog, 读博心路历程 |
 | 2020/02/14 | 新增blog, Mac初体验 |
