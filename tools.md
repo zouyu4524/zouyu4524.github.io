@@ -2,7 +2,7 @@
 layout: article
 title: 常用软件与工具
 key: useful-tools
-modify_date: 2019-01-13
+modify_date: 2020-04-10
 pageview: false
 aside:
     toc: true
@@ -39,6 +39,7 @@ aside:
 - [Fork](https://git-fork.com/): 图形化Git管理工具
 - [Fraps](https://www.fraps.com): 实时显示帧数
 - [Figma](https://www.figma.com): 绘制SVG图像, 设计页面布局等
+- [FFmpeg](https://www.ffmpeg.org/): 视频、流媒体相关的完善解决方案
 
 ## G
 
@@ -89,6 +90,7 @@ aside:
 - [Screen2Gif](https://www.screentogif.com/): 录屏并转换为GIF动图, 力荐
 - [Sublime Text 3](https://www.sublimetext.com/download): 文本编辑器, 简易的IDE, 个人站点用其编辑
 - [Samba](https://www.samba.org/): Linux、Unix操作系统与Windows间实现文件共享
+- [Streamlink](https://github.com/streamlink/streamlink): 在线视频下载工具, 与[youtube-dl](https://github.com/ytdl-org/youtube-dl)类似
 
 ## T
 
@@ -114,6 +116,10 @@ aside:
 ## X
 
 - [XShell](https://www.netsarang.com/en/xshell/): 远程连接服务器工具箱
+
+## Y
+
+- [youtube-dl](https://github.com/ytdl-org/youtube-dl): 在线视频下载工具, 如油管和其他以`m3u8`格式提供串流的视频网站
 
 [^vb]: [Running a Virtual Machine when Windows Hyper-V is enabled should NOT Crash Windows](https://www.virtualbox.org/ticket/16801)
 [^docker]: [Microsoft Hyper-V](https://docs.docker.com/machine/drivers/hyper-v/)
