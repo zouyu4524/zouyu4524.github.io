@@ -10,13 +10,13 @@ mermaid: true
 tags: [LaTeX]
 ---
 
-从WinEdit到TeXStudio再到VS Code, "终于找到你"。<!--more-->
+从WinEdt到TeXStudio再到VS Code, "终于找到你"。<!--more-->
 
 <div style="margin: 0 auto;" align="justify" markdown="1">
 
 ## 前言
 
-科研论文写作, 尤其是工科论文, LaTeX环境搭建是第一步。不同于Word的所见即所得, LaTeX门槛相对较高, 尤其是许多相关的术语或词汇: LaTeX, MiKTeX, TeXlive, CTeX, pdflatex, xelatex, TeXStudio, WinEdit等等, 很容易让入门的用户感到困惑。LaTeX语法有关的教程非常丰富, 例如: 《一份不太简短的$\LaTeX2\varepsilon$介绍》[^lshort]。本文不涉及LaTeX语法内容, 主要旨在厘清这些概念间的关系, 并且给出推荐的LaTeX环境搭建方案。
+科研论文写作, 尤其是工科论文, LaTeX环境搭建是第一步。不同于Word的所见即所得, LaTeX门槛相对较高, 尤其是许多相关的术语或词汇: LaTeX, MiKTeX, TeXlive, CTeX, pdflatex, xelatex, TeXStudio, WinEdt等等, 很容易让入门的用户感到困惑。LaTeX语法有关的教程非常丰富, 例如: 《一份不太简短的$\LaTeX2\varepsilon$介绍》[^lshort]。本文不涉及LaTeX语法内容, 主要旨在厘清这些概念间的关系, 并且给出推荐的LaTeX环境搭建方案。
 
 ## TL;DR
 
@@ -44,7 +44,7 @@ Word之所以"所见即所得",是因为用户对"编译▶️"环节是无感�
 
 | 类别 | 术语或词汇 |
 | :---: | :--- |
-| 编辑器 | WinEdit, TeXStudio, VSCode |
+| 编辑器 | WinEdt, TeXStudio, VSCode |
 | 编译器 | latex, pdflatex, xelatex |
 | PDF(DVI)文档阅读器 | Sumatra PDF, Adobe Reader, Yap viewer |
 
@@ -54,7 +54,7 @@ Word之所以"所见即所得",是因为用户对"编译▶️"环节是无感�
 
 ### CTeX
 
-这是我用的第一个LaTeX发行版(更应该称其为"套装"), 在安装的时候我还不了解LaTeX相关的概念, 但并不妨碍使用。因为CTeX[^ctex]做到了足够的"傻瓜式"操作, 其安装程序包括了编辑器: WinEdit, 各类编译器: latex, pdflatex, xelatex等以及文档阅读工具: Sumatra PDF, 一应俱全, 并且完整版安装基本囊括了所有可能用到的LaTeX宏包。但其"包全"的方式也恰恰某程度上阻碍了用户对LaTeX排版系统的了解。更为关键的是, 其更新目前处于停滞状态, 某些功能已无法满足当前需求, 如`latexmk`版本陈旧。[这篇文章](https://zhuanlan.zhihu.com/p/45174503)对CTeX的分析很全面。结论是, **目前不再推荐使用CTeX套装**。
+这是我用的第一个LaTeX发行版(更应该称其为"套装"), 在安装的时候我还不了解LaTeX相关的概念, 但并不妨碍使用。因为CTeX[^ctex]做到了足够的"傻瓜式"操作, 其安装程序包括了编辑器: WinEdt, 各类编译器: latex, pdflatex, xelatex等以及文档阅读工具: Sumatra PDF, 一应俱全, 并且完整版安装基本囊括了所有可能用到的LaTeX宏包。但其"包全"的方式也恰恰某程度上阻碍了用户对LaTeX排版系统的了解。更为关键的是, 其更新目前处于停滞状态, 某些功能已无法满足当前需求, 如`latexmk`版本陈旧。[这篇文章](https://zhuanlan.zhihu.com/p/45174503)对CTeX的分析很全面。结论是, **目前不再推荐使用CTeX套装**。
 
 ### MiKTeX
 
@@ -70,7 +70,7 @@ MiKTeX是主流的LaTeX发行版之一, 编译器齐全, 宏包管理功能方�
 
 ## 编辑器
 
-编辑器是写作的窗口, 一款好的编辑器能大大提升写作的效率。对编辑器的需求主要是醒目的语法高亮、好看的颜色主题、关键词自动补全、拼写检查等, 而作为LaTeX的编辑器, 还包括: 文献索引、引用(图表、公式)速查。入门之初, 由于使用的CTeX套装, 编辑器为WinEdit, 傻瓜式操作, 开箱即用, 功能也比较齐全, 但颜色主题比较单一。而后分别尝试过TeXStudio, VSCode。目前最为满意的编辑器是是VSCode。
+编辑器是写作的窗口, 一款好的编辑器能大大提升写作的效率。对编辑器的需求主要是醒目的语法高亮、好看的颜色主题、关键词自动补全、拼写检查等, 而作为LaTeX的编辑器, 还包括: 文献索引、引用(图表、公式)速查。入门之初, 由于使用的CTeX套装, 编辑器为WinEdt, 傻瓜式操作, 开箱即用, 功能也比较齐全, 但颜色主题比较单一。而后分别尝试过TeXStudio, VSCode。目前最为满意的编辑器是VSCode。
 
 ### TeXStudio
 
