@@ -6,7 +6,7 @@ author: Yuze Zou
 show_author_profile: true
 mathjax: true
 modify_date: 2020-01-29
-tags: [Linux, Wine]
+tags: ["杂项"]
 ---
 
 微信目前已限制了登录方式, Linux通过Wine实现登录似乎成了唯一选择。<!--more-->

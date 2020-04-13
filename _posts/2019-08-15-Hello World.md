@@ -4,7 +4,7 @@ key: hello-TeXt
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
-tags: TeXt
+tags: ["建站"]
 
 ---
 

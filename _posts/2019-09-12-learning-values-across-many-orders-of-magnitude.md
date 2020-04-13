@@ -5,7 +5,7 @@ title: "论文翻译: Learning values across many orders of magnitude"
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
-tags: ["Deep Reinforcement Learning", "Deep Learning", "翻译"]
+tags: ["机器学习", "笔记"]
 ---
 
 Hado van Hasselt, Arthur Guez, Matteo Hessel, Volodymyr Mnih, David Silver. "Learning values across many orders of magnitude." In *Advances in Neural Information Processing Systems*, pp. 4287-4295. 2016. <!--more-->[[pdf](https://arxiv.org/pdf/1602.07714)]

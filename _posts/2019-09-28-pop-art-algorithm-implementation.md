@@ -6,7 +6,7 @@ author: Yuze Zou
 show_author_profile: true
 mathjax: true
 mermaid: true
-tags: ["PyTorch", "Python", "Deep Reinforcement Learning"]
+tags: ["机器学习", "Python"]
 ---
 
 通过PyTorch实现Pop-Art算法。<!--more-->

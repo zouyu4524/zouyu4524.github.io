@@ -7,7 +7,7 @@ author: Yuze Zou
 show_author_profile: true
 mathjax: true
 clipboard: true
-tags: [LaTeX]
+tags: [LaTeX, "笔记"]
 ---
 
 $\LaTeX$相关问题与解决方式, 不定期更新。<!--more-->

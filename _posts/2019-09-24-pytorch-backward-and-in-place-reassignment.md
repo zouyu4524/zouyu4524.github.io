@@ -6,7 +6,7 @@ author: Yuze Zou
 show_author_profile: true
 mathjax: true
 mermaid: true
-tags: ["PyTorch", "Python", "Machine Learning", "backward"]
+tags: ["机器学习", "Python", "笔记"]
 ---
 
 本文简要分析PyTorch`backward`使用中遇到的in-place赋值问题, 以作记录。<!--more-->

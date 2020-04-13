@@ -5,7 +5,7 @@ title: "Solution for Calculator: the Game"
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
-tags: Game MATLAB
+tags: ["MATLAB"]
 ---
 
 暴力求解小游戏。“闲不过系列”。<!--more-->

@@ -6,7 +6,7 @@ author: Yuze Zou
 show_author_profile: true
 clipboard: true
 mathjax: false
-tags: ["CSS", "HTML", "Javascript"]
+tags: ["前端"]
 ---
 
 与CSS相关的三个小页面。

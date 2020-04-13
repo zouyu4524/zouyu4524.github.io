@@ -5,7 +5,7 @@ key: first-step-on-macOS
 author: Yuze Zou
 show_author_profile: true
 clipboard: true
-tags: ["macOS"]
+tags: ["杂项"]
 ---
 
 入坑OS X, 打造适合科研的mac笔记本。<!--more-->

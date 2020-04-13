@@ -7,7 +7,7 @@ show_author_profile: true
 clipboard: false
 aside:
   toc: false
-tags: ["居家"]
+tags: ["杂项"]
 ---
 
 终于解决了家里无线网络的切换问题。<!--more-->

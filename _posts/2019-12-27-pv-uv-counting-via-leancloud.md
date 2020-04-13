@@ -6,7 +6,7 @@ author: Yuze Zou
 show_author_profile: true
 clipboard: true
 mermaid: true
-tags: ["云服务", "Cookie", "Javascript"]
+tags: ["建站", "前端"]
 ---
 
 基于TeXt主题中已有的Leancloud访问量统计API, 新增全站访问统计以及独立访客统计。<!--more-->

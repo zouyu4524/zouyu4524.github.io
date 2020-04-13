@@ -6,7 +6,7 @@ author: Yuze Zou
 show_author_profile: true
 mathjax: true
 modify_date: 2020-01-29
-tags: [Android, "Deep Learning", "Federated Learning", Java]
+tags: ["机器学习"]
 ---
 
 时隔一年之久再次更新博文。😅记录近来的项目经历, 留作以后参考, 也希望能够帮到有需要的人。<!--more-->

@@ -5,7 +5,7 @@ title: Autodiff学习笔记
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
-tags: ["Machine Learning", "AutoDiff"]
+tags: ["机器学习"]
 ---
 Automatic differentiation, 缩写为 AutoDiff 是机器学习中重要概念——backpropagation——的基础。<!--more-->
 

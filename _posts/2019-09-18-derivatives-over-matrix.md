@@ -5,7 +5,7 @@ title: "向量, 矩阵与张量梯度的理论推导"
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
-tags: ["Machine Learning", "Matrix Calculus", "Deep Learning"]
+tags: ["机器学习", "数学", "笔记"]
 ---
 
 

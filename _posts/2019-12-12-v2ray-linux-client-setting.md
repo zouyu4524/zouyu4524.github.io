@@ -7,7 +7,7 @@ show_author_profile: true
 clipboard: true
 modify_date: 2020-01-13
 mermaid: true
-tags: ["科学上网"]
+tags: ["杂项"]
 ---
 
 V2Ray是目前最佳的科学上网技术之一。如果你购买了第三方的科学上网服务, 那么本文可能可以帮上你。

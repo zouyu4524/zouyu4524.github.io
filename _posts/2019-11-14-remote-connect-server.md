@@ -6,7 +6,7 @@ author: Yuze Zou
 show_author_profile: true
 clipboard: false
 modify_date: 2019-11-18
-tags: ["Linux"]
+tags: ["杂项"]
 ---
 
 乞丐版远程服务器跳板。 <!--more-->

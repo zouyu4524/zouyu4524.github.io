@@ -6,7 +6,7 @@ author: Yuze Zou
 show_author_profile: true
 clipboard: true
 mermaid: true
-tags: ["Linux", "Samba"]
+tags: ["杂项"]
 ---
 
 结合Samba与SSH隧道技术实现Windows与CentOS间在**校园网跨网段**环境下共享文件。<!--more-->

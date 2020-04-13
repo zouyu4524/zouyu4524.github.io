@@ -5,7 +5,7 @@ key: install-baidunetdisk-on-centos7
 author: Yuze Zou
 show_author_profile: true
 clipboard: true
-tags: ["Linux", "Javascript"]
+tags: ["杂项"]
 ---
 
 CentOS 7的默认gcc版本为`4.8`, 导致百度网盘客户端安装后无法正常启动。本文记录解决此问题的过程。<!--more-->

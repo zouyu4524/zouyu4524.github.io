@@ -3,7 +3,7 @@ key: cvx-add-self-function
 title: cvx添加自定义函数
 author: Yuze Zou
 show_author_profile: true
-tags: [cvx, MATLAB, "Convex Optimization"]
+tags: ["MATLAB"]
 ---
 
 本文记录MATLAB/CVX工具包添加自定义函数的示例。<!--more-->

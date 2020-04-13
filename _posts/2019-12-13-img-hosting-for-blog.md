@@ -5,7 +5,7 @@ key: img-hosting-for-blog
 author: Yuze Zou
 show_author_profile: true
 clipboard: true
-tags: ["图床"]
+tags: ["建站"]
 ---
 
 每月不超过10元、国内外均可访问、HTTPS、自定义域名的图床方案。

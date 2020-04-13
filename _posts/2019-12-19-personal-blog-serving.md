@@ -5,7 +5,7 @@ key: personal-blog-serving
 author: Yuze Zou
 show_author_profile: true
 clipboard: true
-tags: ["云服务", "Cloudflare"]
+tags: ["建站", "前端"]
 ---
 
 将个人博客完全托管于七牛云。<!--more-->

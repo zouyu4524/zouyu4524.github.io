@@ -5,7 +5,7 @@ key: quit-or-not
 author: Yuze Zou
 show_author_profile: true
 clipboard: true
-tags: ["日记"]
+tags: ["生活"]
 ---
 
 也许是读博路上的一个拐点, 记录一些比较私人的感受和想法。<!--more-->

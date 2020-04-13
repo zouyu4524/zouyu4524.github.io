@@ -5,7 +5,7 @@ title: "PyTorch基础教程"
 author: Yuze Zou
 show_author_profile: true
 mathjax: false
-tags: ["PyTorch", "Python", "Machine Learning"]
+tags: ["机器学习", "Python", "笔记"]
 ---
 
 官网基础教程学习记录。<!--more-->

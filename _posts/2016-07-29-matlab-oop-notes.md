@@ -6,7 +6,7 @@ author: Yuze Zou
 show_author_profile: true
 mathjax: true
 mermaid: true
-tags: ["MATLAB", "读书笔记"]
+tags: ["MATLAB", "笔记"]
 ---
 
 部分读书笔记。<!--more-->

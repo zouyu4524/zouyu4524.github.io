@@ -6,7 +6,7 @@ author: Yuze Zou
 show_author_profile: true
 clipboard: true
 mathjax: false
-tags: ["GitHub", "Cloudflare"]
+tags: ["Git/GitHub", "前端", "建站"]
 ---
 
 几乎免费的建站方案。

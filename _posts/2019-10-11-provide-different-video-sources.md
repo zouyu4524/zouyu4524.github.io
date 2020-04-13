@@ -6,7 +6,7 @@ author: Yuze Zou
 show_author_profile: true
 clipboard: true
 mathjax: false
-tags: ["Jekyll", "Javascript"]
+tags: ["前端"]
 ---
 
 本文为博客设计了一种视频嵌入方案: 可以由用户自主选择播放源。

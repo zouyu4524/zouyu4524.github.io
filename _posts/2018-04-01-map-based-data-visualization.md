@@ -3,7 +3,7 @@ key: map-based-data-visualization
 title: 中国省市自治区行政区域数据可视化
 author: Yuze Zou
 show_author_profile: true
-tags: [Excel, MATLAB, Mapshape, Visualization]
+tags: ["MATLAB", "杂项"]
 ---
 
 本文总结对比三种基于地理信息的数据可视化工具。<!--more-->

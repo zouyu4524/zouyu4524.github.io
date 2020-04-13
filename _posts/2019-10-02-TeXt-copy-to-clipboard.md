@@ -6,7 +6,7 @@ author: Yuze Zou
 show_author_profile: true
 clipboard: true
 modify_date: 2020-01-29
-tags: ["TeXt", "Jekyll", "Javascript", "GitHub"]
+tags: ["Git/GitHub", "前端"]
 ---
 
 参与开源第一步! 第一次的Pull Request, 献给TeXt。

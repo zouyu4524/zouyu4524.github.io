@@ -6,7 +6,7 @@ author: Yuze Zou
 show_author_profile: true
 mathjax: true
 mermaid: true
-tags: ["Geometry", "Interests"]
+tags: ["杂项"]
 ---
 
 
