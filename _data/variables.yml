@@ -74,6 +74,6 @@ sources:
       js: 'https://cdn.staticfile.org/gitalk/1.5.2/gitalk.min.js'
       css: 'https://cdn.staticfile.org/gitalk/1.5.2/gitalk.css'
     valine: 'https://cdn.staticfile.org/valine/1.3.10/Valine.min.js'
-    mathjax: '/assets/scripts/mathjax@2.7.4/MathJax.js'
+    mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.4/unpacked/MathJax.js?config=TeX-MML-AM_CHTML'
     mermaid: 'https://cdn.staticfile.org/mermaid/8.0.0-rc.8/mermaid.min.js'
     clipboard: 'https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js'
