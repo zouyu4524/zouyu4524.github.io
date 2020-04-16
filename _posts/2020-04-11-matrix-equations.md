@@ -20,7 +20,7 @@ tags: ["数学"]
 | ${\bf tr}({\bf X})$ | 矩阵${\bf X}$的迹(trace) | $\text{diag}({\bf x})$ | 以向量${\bf x}$构建对角矩阵 |
 | ${\bf vec}({\bf X})$ | 将矩阵${\bf X}$按其列依次堆叠构成向量 | $x_{ij}$, ${\bf X}_{ij}$ | 矩阵${\bf X}$的第$i$行, 第$j$列元素 |
 | ${\bf X}^\intercal$ | 矩阵${\bf X}$的转置 | ${\bf I}_m$ | 维度为$m\times m$的单位矩阵 |
-| ${\bf X}_k$ | 矩阵${\bf X}$的第$k$列 | $\require{sideset}\sideset{ _{}^{k} }{ _{}^{} }{\bf X}$ | 矩阵${\bf X}$的第$k$列 |
+| ${\bf X}_k$ | 矩阵${\bf X}$的第$k$列 | $\sideset{ _{}^{k} }{ _{}^{} }{\bf X}$ | 矩阵${\bf X}$的第$k$列 |
 
 
 ## 公式一览
