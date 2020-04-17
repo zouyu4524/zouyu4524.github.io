@@ -2,7 +2,7 @@
 layout: article
 key: latex-notes
 title: LaTeX相关笔记
-modify_date: 2020-03-10
+modify_date: 2020-04-17
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
@@ -15,6 +15,30 @@ $\LaTeX$相关问题与解决方式, 不定期更新。<!--more-->
 <div style="margin: 0 auto;" align="justify" markdown="1">
 
 ## 公式相关
+
+### 左侧上下标
+
+通过`^{}`, `_{}`可以在表达式的右侧添加上、下标, 而如果需要在左侧添加时, 可以通过`\sideset`命令实现, 该命令属于`amsmath`宏包, 用法如下:
+
+```latex
+{\sideset{^#1 _#2}{^#3 _#4} 表达式}
+```
+其中, `#1`, `#2`, `#3`, `#4`为占位符, 分别表示表达式的左上、左下, 右上, 右下四个位置。如果只需要左侧上、下标, 则可将`#3`, `#4`占位符留空, 但不可省略`^`, `_`。用例如下[^sideset]:
+
+<div class="grid-container">
+<div class="grid grid--px-2">
+  <div class="cell cell--6" markdown="1">
+```latex
+{\sideset{^1_2}{^3_4}\sum }
+```
+</div>
+  <div class="cell cell--4">
+<div style="padding: 10px 0px" align="center" markdown="1">
+  $${\sideset{^1_2}{^3_4}\sum }$$
+</div>
+</div>
+</div>
+</div>
 
 ### 算法换行保持缩进
 
@@ -146,3 +170,4 @@ See the caption package documentation for explanation.
 [^wrap]: [Include a line break in algorithmic while maintaining indentation](https://tex.stackexchange.com/a/444471/198472)
 [^hspace]: [\\hspace vs. \\hspace\*](https://tex.stackexchange.com/a/89090/198472)
 [^caption]: [Package caption Warning: Unsupported document class](https://tex.stackexchange.com/a/348152/198472)
+[^sideset]: [\sideset - Tex Command](https://www.tutorialspoint.com/tex_commands/sideset.htm)
