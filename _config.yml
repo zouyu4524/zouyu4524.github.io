@@ -138,7 +138,7 @@ comments:
   valine:
     app_id      : s9wxptX2fADQk3lePW7SRTcp-gzGzoHsz # LeanCloud App id
     app_key     : 65xinhXv7oauYLyF6Efc3Jj2 # LeanCloud App key
-    placeholder : 欢迎留言交流！ # Prompt information
+    placeholder : 欢迎留言交流！（填写邮箱可获得回复提醒😊） # Prompt information
     visitor     : # false (default)
     meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
 
