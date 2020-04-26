@@ -96,6 +96,7 @@ bundle exec jekyll serve
 
 | 日期	| 修改说明 |
 |:---:	|:---	  |
+| 2020/04/26 | 新增blog, 调试Python module |
 | 2020/04/13 | 新增blog, 常用矩阵等式 |
 | 2020/04/10 | 新增blog, LaTeX相关环境与推荐 |
 | 2020/03/26 | 新增blog, MiKTeX epstopdf字体问题 |
