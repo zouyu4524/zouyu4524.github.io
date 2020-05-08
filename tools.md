@@ -2,7 +2,7 @@
 layout: article
 title: 常用软件与工具
 key: useful-tools
-modify_date: 2020-04-10
+modify_date: 2020-04-30
 pageview: false
 aside:
     toc: true
@@ -14,6 +14,7 @@ aside:
 - [Anaconda](https://www.anaconda.com/): Python环境管理工具
 - [Android Studio](https://developer.android.com/studio): IDE for Android
 - [AutoHotkey](https://www.autohotkey.com/): 自定义快捷键, 可用于设置窗口置顶[^hotkey]
+- [ArcTime](https://arctime.org/): 字幕制作软件[^arctime]
 
 ## B
 
@@ -28,6 +29,7 @@ aside:
 ## D
 
 - [Docker](https://www.docker.com/): 部署工具, 相对虚拟机更轻量级; Windows下因为Hyper-V[^vb]<sup>, </sup>[^docker]与VirtualBox不相容
+- [Davinci Resolve](http://www.blackmagicdesign.com/products/davinciresolve): 视频剪辑与调色软件
 
 ## E
 
@@ -125,3 +127,4 @@ aside:
 [^docker]: [Microsoft Hyper-V](https://docs.docker.com/machine/drivers/hyper-v/)
 [^hotkey]: [AutoHotKey 超強自訂快速鍵工具](https://www.youtube.com/watch?v=PJ6L0sBpI5Y)
 [^hyper]: [WSL Terminal colors, tabs & styling - Windows subsystem for Linux series](https://www.youtube.com/watch?v=kY4Ns260i2k)
+[^arctime]: [每次替影片上字幕都觉得很厌世？学会这招让你从谷底反弹重生！](https://www.youtube.com/watch?v=Fz9VRqSFZAc)
