@@ -96,6 +96,7 @@ bundle exec jekyll serve
 
 | 日期	| 修改说明 |
 |:---:	|:---	  |
+| 2020/05/13 | 新增blog, 后台白名单 |
 | 2020/04/26 | 新增blog, 调试Python module |
 | 2020/04/13 | 新增blog, 常用矩阵等式 |
 | 2020/04/10 | 新增blog, LaTeX相关环境与推荐 |
