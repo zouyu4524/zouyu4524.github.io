@@ -3,6 +3,7 @@ layout: article
 title: 关于我
 mathjax: false
 pageview: false
+modify_date: 2020-05-13
 ---
 
 <div id="ID_PHOTO" style="width: 18%;">
@@ -29,9 +30,12 @@ pageview: false
 
 <div align="justify" markdown="1">
 
-- Jiawen Kang, Zehui Xiong, Dusit Niyato, **Yuze Zou**, Yang Zhang, and Mohsen Guizani, "Reliable federated learning for mobile networks", *IEEE Wireless Communications*, accepted. 
+- Shimin Gong, **Yuze Zou**, Dinh Hoang, Jing Xu, Wenqing Cheng, and Dusit Niyato, "Capitalizing Backscatter-Aided Hybrid Relay Communications with Wireless Energy Harvesting," *IEEE Internet of Things Journal*, accepted.  
+- Jiawen Kang, Zehui Xiong, Dusit Niyato, **Yuze Zou**, Yang Zhang, and Mohsen Guizani, "Reliable federated learning for mobile networks," *IEEE Wireless Communications*, accepted.  
 - Jing Xu, Shimin Gong, **Yuze Zou**, et al. “Redundant Sniffer Deployment for Multi-Channel Wireless Network Forensics with Unreliable Conditions,” *IEEE Transactions on Cognitive Communications and Networking*, accepted.  
 - Jing Xu, **Yuze Zou**, Shimin Gong, et al. “Robust Transmissions in Wireless Powered Multi-Relay Networks with Chance Interference Constraints,” *IEEE Transactions on Communications*, 2018.
+- **Yuze Zou**, Yutong Xie, Canhui Zhang, Shimin Gong, Dinh Hoang, and Dusit Niyato, "Optimization-driven Hierarchical Deep Reinforcement Learning for Hybrid Relaying Communications," in *Proc. WCNC*, 2020.
+- **Yuze Zou**, Shimin Gong, Jing Xu, Dinh Hoang, Dusit Niyato and Wenqing Cheng, "Joint Energy Beamforming and Optimization for Intelligent Reflecting Surface Enhanced Communications," in *Proc. WCNC workshop*, 2020.
 - **Yuze Zou**, Jing Xu, Shimin Gong, et al. “Backscatter-Aided Hybrid Data Offloading for Wireless Powered Edge Sensor Networks,” in *Proc. Globecom*, Hawaii, 2019. [\[slides\]](assets/slides/GC'19-hybrid-relay.pdf)[\[backup\]](https://res.be-my-only.xyz/GC'19-hybrid-relay.pdf)    
 - **Yuze Zou**, Shaohan Feng, Dusit Niyato, et al. “Dynamic Games in Federated Learning Training Service Market,” in *Proc. PacRim*, Victoria, B.C., 2019. [\[slides\]](assets/slides/PacRim'19-dynamic-games.pdf)[\[backup\]](https://res.be-my-only.xyz/PacRim'19-dynamic-games.pdf)  
 - **Yuze Zou**, Shaohan Feng, Dusit Niyato, et al. “Mobile Device Training Strategies in Federated Learning: An Evolutionary Game Approach,” in *Proc. GreenCom*, 2019. [\[slides\]](assets/slides/GreenCom'19-evolutionary-game.pdf)[\[backup\]](https://res.be-my-only.xyz/GreenCom'19-evolutionary-game.pdf)  
