@@ -5,7 +5,7 @@ key: v2ray-linux-client-setting
 author: Yuze Zou
 show_author_profile: true
 clipboard: true
-modify_date: 2020-01-13
+modify_date: 2020-05-22
 mermaid: true
 tags: ["杂项"]
 ---
@@ -20,9 +20,9 @@ V2Ray是目前最佳的科学上网技术之一。如果你购买了第三方的
 
 目前使用的科学上网技术是V2Ray, 支持Windows/Linux/Mac/iOS/Android等全平台。其核心项目: [v2ray-core](https://github.com/v2ray/v2ray-core), 托管于GitHub。Linux下的客户端可以在其[release](https://github.com/v2ray/v2ray-core/releases)中下载。
 
-我没有自建服务器, 是购买的第三方服务。相应的服务器端的配置信息可在服务提供方的官网上找到。
+我没有自建服务器(VPS), 是购买的第三方服务。相应的服务器端的配置信息可在服务提供方(机场)的官网上找到。
 {: .warning}
-此前, 我使用的是ShadowsocksR (SSR)服务, 配置信息比较清晰, 无外乎服务器地址、端口、加密方式、混淆方式, 因此无论在哪个平台配置起来都比较方便。但是V2Ray的配置项目似乎更为复杂, 并且具体的配置信息并没有暴露于我订阅的服务提供方官网中, 仅以二维码或链接的形式给出。而v2ray-core并未提供图形化的配置方式, 但好在配置文件与Windows一致。
+此前, 我使用的是ShadowsocksR (SSR)服务, 配置信息比较清晰, 无外乎服务器地址、端口、加密方式、混淆方式, 因此无论在哪个平台配置起来都比较方便。但是V2Ray的配置项目似乎更为复杂, 并且具体的配置信息并没有暴露于我订阅的服务提供方官网中, 仅以二维码或链接的形式给出。~~而v2ray-core并未提供图形化的配置方式~~(目前已有[V2RayL](https://github.com/jiangxufeng/v2rayL/releases)方案, 暂未尝试), 但好在配置文件与Windows一致。
 
 ## 配置流程
 
@@ -38,7 +38,7 @@ bash <(curl -L -s https://install.direct/go.sh)
 
 ### 配置`config.json`
 
-客户端要能连上服务器必须设置与服务器一致的配置, 并且系统时间与服务器时间差不能超过一分钟。此前在网上直接找到的配置文件与我的服务提供方配置不完全一致, 所以直接借用是无法联通的。这篇文章[^1]中提到了一个巧妙的方法: 
+V2Ray采用的Vmess协议下, 客户端要能连上服务器必须设置与服务器一致的配置, 并且系统时间与服务器时间差不能超过一分钟。此前在网上直接找到的配置文件与我的服务提供方配置不完全一致, 所以直接借用是无法联通的。这篇文章[^1]中提到了一个巧妙的方法: 
 
 **复制windows下的配置文件到Linux下**。
 {: .success}
@@ -76,5 +76,5 @@ C --> D[V2Ray服务器];
 
 </div>
 
-[^1]: [Linux下使用V2ray客户端以及PAC配置](https://www.imcaviare.com/2018-12-18-1/)
+[^1]: [V2Ray的Linux客户端配置](https://www.zhangshenghai.com/posts/26401/)
 [^v2ray]: [Linux 安装脚本](https://www.v2ray.com/chapter_00/install.html#linuxscript)
