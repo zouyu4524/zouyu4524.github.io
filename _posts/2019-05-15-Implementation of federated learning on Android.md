@@ -1,11 +1,11 @@
 ---
 layout: article
 key: federated-learning-android-implementation
-title: 联合学习之安卓实现
+title: 联邦学习之安卓实现
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
-modify_date: 2020-01-29
+modify_date: 2020-11-12
 tags: ["机器学习"]
 ---
 
@@ -15,12 +15,12 @@ tags: ["机器学习"]
 
 ## 前言
 
-本项目的需求如下: 搭建实际的联合学习（Federated Learning）场景, 主要包括两个组成部分: **服务器**与**客户端**。两者的角色分别是: 
+本项目的需求如下: 搭建实际的联邦学习（Federated Learning）场景, 主要包括两个组成部分: **服务器**与**客户端**。两者的角色分别是: 
 
 - 服务器: 集中处理由客户端上传的已更新模型之权重, 并将汇集后的新模型传输至客户端, 更新客户端的模型。
 - 客户端: 利用本地存储的数据对模型进行训练, 并将更新后的模型权重上传至服务器。
 
-联合学习的主要优势在于保障客户数据隐私的同时能够进行大规模的机器学习, 获得不亚于传统集中式的机器学习模型的表现。联合学习的概念最早于2016年由Google Brian团队推出, 截至近日, Google已经正式发布了相关的[平台](https://arxiv.org/pdf/1902.01046.pdf)。Google已经将该技术应用于自家产品Gboard之中, 利用客户资源（输入数据）增强Gboard输入预测的能力, 优化客户的使用体验。联合学习系统中, 一般会由服务器向客户端下发一个基础的模型; 在此之上, 各个客户端再结合本地数据对模型进一步的训练, 将训练后的模型权重上传至服务器; 服务器根据客户端上传的模型权重, 综合得到新的模型权重。如此往复, 联合学习系统可以实现在保障用户数据隐私的情况下, 精进机器学习模型的性能, 提高用户的体验。有关联合学习的详细介绍可以参考以下[博文](https://federated.withgoogle.com/)。基于以上的观察, 实验室打算做联合学习的相关研究, 自然地, 需要先把台子搭起来。
+联邦学习的主要优势在于保障客户数据隐私的同时能够进行大规模的机器学习, 获得不亚于传统集中式的机器学习模型的表现。联邦学习的概念最早于2016年由Google Brian团队推出, 截至近日, Google已经正式发布了相关的[平台](https://arxiv.org/pdf/1902.01046.pdf)。Google已经将该技术应用于自家产品Gboard之中, 利用客户资源（输入数据）增强Gboard输入预测的能力, 优化客户的使用体验。联邦学习系统中, 一般会由服务器向客户端下发一个基础的模型; 在此之上, 各个客户端再结合本地数据对模型进一步的训练, 将训练后的模型权重上传至服务器; 服务器根据客户端上传的模型权重, 综合得到新的模型权重。如此往复, 联邦学习系统可以实现在保障用户数据隐私的情况下, 精进机器学习模型的性能, 提高用户的体验。有关联邦学习的详细介绍可以参考以下[博文](https://federated.withgoogle.com/)。基于以上的观察, 实验室打算做联邦学习的相关研究, 自然地, 需要先把台子搭起来。
 
 ## TL;DR
 
@@ -28,11 +28,11 @@ tags: ["机器学习"]
 
 ## 平台选择
 
-随着机器学习与深度学习的大热, 机器学习平台也井喷式发展。目前最为热门的两大平台分别是Tensorflow与PyTorch。平台热门意味着踩坑的概率小, 即便采坑了能够解决的可能性也很高。但是这里有一个问题, 联合学习中模型训练（Training）的过程发生在终端设备上, 例如手机。而实际上, 模型训练是一个非常消耗计算资源的过程, 这两大平台并未过多关注终端设备上的训练, 相应的文档几乎没有; 更多考虑的情形是在服务器或PC上训练好模型后, 将存储的模型移植到终端, 在终端只“使用”（Inference）模型。在进行一番调研后发现, 我们倾向于使用[DL4J](https://deeplearning4j.org/)作为开发平台。DL4J是Deep Learning for Java的缩写, 顾名思义, 是一个由Java写成的深度学习平台。作为Python当道的机器学习领域, Java的确有些小众, 但好在其文档相对完善（虽然没法和“两大”相比）, 学习成本不高, 并且已有现成的[项目](https://github.com/mccorby/PhotoLabeller)介绍实现了与我们基本相同的需求。更为关键的一点是, 我们选定了Android作为移动端的开发环境, 而Java作为Android的原生开发语言与DL4J刚好匹配。
+随着机器学习与深度学习的大热, 机器学习平台也井喷式发展。目前最为热门的两大平台分别是Tensorflow与PyTorch。平台热门意味着踩坑的概率小, 即便采坑了能够解决的可能性也很高。但是这里有一个问题, 联邦学习中模型训练（Training）的过程发生在终端设备上, 例如手机。而实际上, 模型训练是一个非常消耗计算资源的过程, 这两大平台并未过多关注终端设备上的训练, 相应的文档几乎没有; 更多考虑的情形是在服务器或PC上训练好模型后, 将存储的模型移植到终端, 在终端只“使用”（Inference）模型。在进行一番调研后发现, 我们倾向于使用[DL4J](https://deeplearning4j.org/)作为开发平台。DL4J是Deep Learning for Java的缩写, 顾名思义, 是一个由Java写成的深度学习平台。作为Python当道的机器学习领域, Java的确有些小众, 但好在其文档相对完善（虽然没法和“两大”相比）, 学习成本不高, 并且已有现成的[项目](https://github.com/mccorby/PhotoLabeller)介绍实现了与我们基本相同的需求。更为关键的一点是, 我们选定了Android作为移动端的开发环境, 而Java作为Android的原生开发语言与DL4J刚好匹配。
 
 ## 应用选择
 
-联合学习的主要应用场景在于数据敏感的应用, 例如用户的输入内容、照片、医疗数据等。在此, 我们主要是做一个Proof-of-Can（PoC）的工作, 选择相对容易的应用, 与此同时还要贴合移动场景, 最终选择了: 姿态识别（Human Activity Recognition, HAR）应用。该应用可以通过采集用户设备中传感器, 如加速度计、陀螺仪的数据, 对用户当前的姿态做实时的判定。另一方面, 也可以通过用户主动对当前姿态的标记存储新的训练集于终端, 并进行本地训练。用于训练基础模型的数据集来自于[WISDM](http://www.cis.fordham.edu/wisdm/dataset.php)实验室, 该数据集标定了“Jogging, Walking, Upstairs, Downstairs, Sitting, Standing”共计6种姿态。此数据集包含来自加速度计的数据（x,y,z三个方向）, 在其最初的[论文](http://www.cis.fordham.edu/wisdm/includes/files/sensorKDD-2010.pdf)中, 作者通过组合原始数据构造、提取了共计43个维度的特征, 再用于模型训练。除此以外, 有关HAR的数据集还有[Human Activity Recognition Using Smartphones Data Set](https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones), 该数据集除了加速度计还包括陀螺仪的数据, 数据集样本更多。简便起见, 我们选择了WISDM的数据集。
+联邦学习的主要应用场景在于数据敏感的应用, 例如用户的输入内容、照片、医疗数据等。在此, 我们主要是做一个Proof-of-Can（PoC）的工作, 选择相对容易的应用, 与此同时还要贴合移动场景, 最终选择了: 姿态识别（Human Activity Recognition, HAR）应用。该应用可以通过采集用户设备中传感器, 如加速度计、陀螺仪的数据, 对用户当前的姿态做实时的判定。另一方面, 也可以通过用户主动对当前姿态的标记存储新的训练集于终端, 并进行本地训练。用于训练基础模型的数据集来自于[WISDM](http://www.cis.fordham.edu/wisdm/dataset.php)实验室, 该数据集标定了“Jogging, Walking, Upstairs, Downstairs, Sitting, Standing”共计6种姿态。此数据集包含来自加速度计的数据（x,y,z三个方向）, 在其最初的[论文](http://www.cis.fordham.edu/wisdm/includes/files/sensorKDD-2010.pdf)中, 作者通过组合原始数据构造、提取了共计43个维度的特征, 再用于模型训练。除此以外, 有关HAR的数据集还有[Human Activity Recognition Using Smartphones Data Set](https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones), 该数据集除了加速度计还包括陀螺仪的数据, 数据集样本更多。简便起见, 我们选择了WISDM的数据集。
 
 ### 数据集预处理
 
@@ -79,7 +79,7 @@ MultiLayerConfiguration conf = new NeuralNetConfiguration.Builder()
 
 ## 通信方式
 
-作为实际的联合学习系统, 少不了客户端与服务器间的通信。客户端与服务器之间需要交换更新的模型权重, 具体而言就是文件的传输。这一点可以通过RESTful框架实现。此处介绍一个更为偷懒的方式, 借助Dropbox实现。由于, 项目的出发点更多在于PoC, 通信方式的实现暂且略过。在客户端安装[Dropbox](https://play.google.com/store/apps/details?id=com.dropbox.android)+[DropSync](https://play.google.com/store/apps/details?id=com.ttxapps.dropsync&hl=en_US)两个App, 登陆同一账号; 在服务器端安装[Dropbox](https://www.dropbox.com/downloading), 登陆同一账号即可实现简易版的通信环境。Dropbox在服务器端会自动同步Dropbox同步文件夹中的内容, 如此可以下载由客户端更新后的模型。而客户端也可以通过DropSync链接到Dropbox并设置自动（双向）同步的文件夹, 如此, 将客户端更新后的模型存储于该文件夹中即可自动上传至Dropbox服务器。为了解决文件冲突的问题, 各个客户端可以在存储更新后的模型时为文件名添加设备ID作为区分。（当然, 这样处理的弊端是, 每个设备都会同步其他设备本地训练的模型, 当设备数量增加时, 此项开销是相当可观且完全没有必要的; 仍然, 由于是PoC, 暂且忽略。）
+作为实际的联邦学习系统, 少不了客户端与服务器间的通信。客户端与服务器之间需要交换更新的模型权重, 具体而言就是文件的传输。这一点可以通过RESTful框架实现。此处介绍一个更为偷懒的方式, 借助Dropbox实现。由于, 项目的出发点更多在于PoC, 通信方式的实现暂且略过。在客户端安装[Dropbox](https://play.google.com/store/apps/details?id=com.dropbox.android)+[DropSync](https://play.google.com/store/apps/details?id=com.ttxapps.dropsync&hl=en_US)两个App, 登陆同一账号; 在服务器端安装[Dropbox](https://www.dropbox.com/downloading), 登陆同一账号即可实现简易版的通信环境。Dropbox在服务器端会自动同步Dropbox同步文件夹中的内容, 如此可以下载由客户端更新后的模型。而客户端也可以通过DropSync链接到Dropbox并设置自动（双向）同步的文件夹, 如此, 将客户端更新后的模型存储于该文件夹中即可自动上传至Dropbox服务器。为了解决文件冲突的问题, 各个客户端可以在存储更新后的模型时为文件名添加设备ID作为区分。（当然, 这样处理的弊端是, 每个设备都会同步其他设备本地训练的模型, 当设备数量增加时, 此项开销是相当可观且完全没有必要的; 仍然, 由于是PoC, 暂且忽略。）
 
 ## 模型存储与加载
 
@@ -146,7 +146,7 @@ MPChart中的几个关键概念包括: Chart/DataSet/Data, 可以这样类比: C
 
 ## 服务器
 
-在联合学习系统中, 服务器负责收集来自客户端更新的模型权重, 再对这些权重进行聚合, 一般采用平均的方式。实现这一功能, 在DL4J中也比较直接。ND4J是之于DL4J就如同Tensor之于Tensorflow, 是DL4J中多维矩阵的实现。DL4J的模型参数通过一个Map存储, Map的键-值对为<层名称, 权重>, 可以通过`model.paramTable()`方法获得该Map。需要注意的是, 对于神经网络, DL4J中每一层分别包含权重以及Bias, 存储于`paramTable`中时, 默认的名称分别是`x_W`以及`x_b`, 其中`x`表示层序号, 从0开始。如下给出服务器端平均权重的函数实现: 
+在联邦学习系统中, 服务器负责收集来自客户端更新的模型权重, 再对这些权重进行聚合, 一般采用平均的方式。实现这一功能, 在DL4J中也比较直接。ND4J是之于DL4J就如同Tensor之于Tensorflow, 是DL4J中多维矩阵的实现。DL4J的模型参数通过一个Map存储, Map的键-值对为<层名称, 权重>, 可以通过`model.paramTable()`方法获得该Map。需要注意的是, 对于神经网络, DL4J中每一层分别包含权重以及Bias, 存储于`paramTable`中时, 默认的名称分别是`x_W`以及`x_b`, 其中`x`表示层序号, 从0开始。如下给出服务器端平均权重的函数实现: 
 
 ~~~
 public static void AverageWeights(List<File> files, File originModel, int layer, double alpha) {
@@ -213,6 +213,6 @@ transferred_model = new TransferLearning.Builder(model)
 
 ## 结语
 
-综上, 整理了联合学习之安卓实现的项目点滴。由于对Java与Android了解不多, 代码组织上有许多可以精进之处, 以后有机会再做改进。此外, 目前Google已经将Kotlin设为Android开发的首选语言, 上述提到的主要参考[项目](https://github.com/mccorby/PhotoLabeller)也是用该语言开发, 将来可以考虑将项目用Kotlin重构。
+综上, 整理了联邦学习之安卓实现的项目点滴。由于对Java与Android了解不多, 代码组织上有许多可以精进之处, 以后有机会再做改进。此外, 目前Google已经将Kotlin设为Android开发的首选语言, 上述提到的主要参考[项目](https://github.com/mccorby/PhotoLabeller)也是用该语言开发, 将来可以考虑将项目用Kotlin重构。
 
 </div>
