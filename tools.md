@@ -2,7 +2,7 @@
 layout: article
 title: 常用软件与工具
 key: useful-tools
-modify_date: 2020-04-30
+modify_date: 2020-11-28
 pageview: false
 aside:
     toc: true
@@ -25,6 +25,8 @@ aside:
 
 - [CTeX](http://www.ctex.org/CTeXDownload): $\LaTeX$傻瓜式安装工具
 - [CVX](http://cvxr.com/cvx/): 凸优化问题求解工具, 基于MATLAB开发, 有Python版([CVXPY](https://www.cvxpy.org/)), 但两者solver不一致, 结果不一定相同
+- [code-server](https://github.com/cdr/code-server): 可运行于后台的vscode
+- [Caddy](https://caddyserver.com/): 支持自动HTTPS的web server, 可快速搭建ftp服务器
 
 ## D
 
@@ -42,6 +44,7 @@ aside:
 - [Fraps](https://www.fraps.com): 实时显示帧数
 - [Figma](https://www.figma.com): 绘制SVG图像, 设计页面布局等
 - [FFmpeg](https://www.ffmpeg.org/): 视频、流媒体相关的完善解决方案
+- [FileZilla](https://filezilla-project.org/): Mac OS的ftp工具
 
 ## G
 
@@ -98,6 +101,9 @@ aside:
 
 - [TeXStudio](https://www.texstudio.org/): $\LaTeX$编辑器, 与**Language Tool**以及**MiKTeX**一道组成写论文必备。
 - [Texlive](https://www.tug.org/texlive/): 另一个$\LaTeX$编译器与包管理工具, 推荐Linux系统下使用
+- [tmux](https://github.com/tmux/tmux/wiki): Linux远程最佳伴侣
+    - [tmux plugins manager](https://github.com/tmux-plugins/tpm): tmux插件管理工具
+    - [tmux rescurrect](https://github.com/tmux-plugins/tmux-resurrect): tmux状态自动恢复插件[^tmux_resur]
 
 ## U
 
@@ -109,6 +115,7 @@ aside:
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads): 另一个虚拟机工具
 - [V2Ray](https://www.v2ray.com/): 翻墙工具
 - [Visio](https://products.office.com/visio/flowchart-software): 流程图工具
+- [VNC viewer](https://www.realvnc.com/en/connect/download/viewer/): Linux远程桌面工具, 跨平台
 
 ## W
 
@@ -128,3 +135,4 @@ aside:
 [^hotkey]: [AutoHotKey 超強自訂快速鍵工具](https://www.youtube.com/watch?v=PJ6L0sBpI5Y)
 [^hyper]: [WSL Terminal colors, tabs & styling - Windows subsystem for Linux series](https://www.youtube.com/watch?v=kY4Ns260i2k)
 [^arctime]: [每次替影片上字幕都觉得很厌世？学会这招让你从谷底反弹重生！](https://www.youtube.com/watch?v=Fz9VRqSFZAc)
+[^tmux_resur]: [让你的 tmux 起死回生！](https://zhuanlan.zhihu.com/p/259640277)
