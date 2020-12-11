@@ -30,10 +30,11 @@ modify_date: 2020-05-13
 
 <div align="justify" markdown="1">
 
-- Shimin Gong, **Yuze Zou**, Dinh Hoang, Jing Xu, Wenqing Cheng, and Dusit Niyato, "Capitalizing Backscatter-Aided Hybrid Relay Communications with Wireless Energy Harvesting," _IEEE Internet of Things Journal_, accepted.
-- Jiawen Kang, Zehui Xiong, Dusit Niyato, **Yuze Zou**, Yang Zhang, and Mohsen Guizani, "Reliable federated learning for mobile networks," _IEEE Wireless Communications_, accepted.
-- Jing Xu, Shimin Gong, **Yuze Zou**, et al. “Redundant Sniffer Deployment for Multi-Channel Wireless Network Forensics with Unreliable Conditions,” _IEEE Transactions on Cognitive Communications and Networking_, accepted.
-- Jing Xu, **Yuze Zou**, Shimin Gong, et al. “Robust Transmissions in Wireless Powered Multi-Relay Networks with Chance Interference Constraints,” _IEEE Transactions on Communications_, 2018.
+- **Yuze Zou**, Shimin Gong, Jing Xu, Wenqing Cheng, Dinh Thai Hoang and Dusit Niyato, "Wireless Powered Intelligent Reflecting Surfaces for Enhancing Wireless Communications," _IEEE Transactions on Vehicular Technology_, 2020.
+- Shimin Gong, **Yuze Zou**, Dinh Hoang, Jing Xu, Wenqing Cheng, and Dusit Niyato, "Capitalizing Backscatter-Aided Hybrid Relay Communications with Wireless Energy Harvesting," _IEEE Internet of Things Journal_, 2020.
+- Jiawen Kang, Zehui Xiong, Dusit Niyato, **Yuze Zou**, Yang Zhang, and Mohsen Guizani, "Reliable federated learning for mobile networks," _IEEE Wireless Communications_, 2020.
+- Jing Xu, Shimin Gong, **Yuze Zou**, et al. “Redundant Sniffer Deployment for Multi-Channel Wireless Network Forensics with Unreliable Conditions,” _IEEE Transactions on Cognitive Communications and Networking_, 2020.
+- Jing Xu, **Yuze Zou**, Shimin Gong, et al. “Robust Transmissions in Wireless Powered Multi-Relay Networks with Chance Interference Constraints,” _IEEE Transactions on Communications_, 2019.
 - **Yuze Zou**, Yutong Xie, Canhui Zhang, Shimin Gong, Dinh Hoang, and Dusit Niyato, "Optimization-driven Hierarchical Deep Reinforcement Learning for Hybrid Relaying Communications," in _Proc. WCNC_, 2020. [\[slides\]](assets/slides/WCNC'20-hddpg-hybrid-relay.pdf)[\[slides\]](https://res.be-my-only.xyz/WCNC'20-hddpg-hybrid-relay.pdf)
 - **Yuze Zou**, Shimin Gong, Jing Xu, Dinh Hoang, Dusit Niyato and Wenqing Cheng, "Joint Energy Beamforming and Optimization for Intelligent Reflecting Surface Enhanced Communications," in _Proc. WCNC workshop_, 2020. [\[slides\]](assets/slides/WCNC'20-workshop-irs.pdf)[\[slides\]](https://res.be-my-only.xyz/WCNC'20-workshop-irs.pdf)
 - **Yuze Zou**, Jing Xu, Shimin Gong, et al. “Backscatter-Aided Hybrid Data Offloading for Wireless Powered Edge Sensor Networks,” in _Proc. Globecom_, Hawaii, 2019. [\[slides\]](assets/slides/GC'19-hybrid-relay.pdf)[\[backup\]](https://res.be-my-only.xyz/GC'19-hybrid-relay.pdf)
