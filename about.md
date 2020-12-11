@@ -52,7 +52,9 @@ modify_date: 2020-05-13
 
 ### 专业技能
 
-- 计算机程序语言 - **掌握**: C++, MATLAB/cvx, Python/Tensorflow - **了解**: Java/Android
+- 计算机程序语言
+	- **掌握**: C++, MATLAB/cvx, Python/Tensorflow	
+	- **了解**: Java/Android
 - 数学工具: 凸优化, 博弈论, 最优控制
 - 计算机网络, TCP/IP 协议
 
