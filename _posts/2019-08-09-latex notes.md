@@ -2,7 +2,7 @@
 layout: article
 key: latex-notes
 title: LaTeX相关笔记
-modify_date: 2020-04-17
+modify_date: 2020-12-16
 author: Yuze Zou
 show_author_profile: true
 mathjax: true
@@ -15,6 +15,27 @@ $\LaTeX$相关问题与解决方式, 不定期更新。<!--more-->
 <div style="margin: 0 auto;" align="justify" markdown="1">
 
 ## 公式相关
+
+### 调整公式显示大小
+
+论文中时常会出现公式过长超出栏位的情况, 一般可以通过换行、跨双栏的方式解决; 对于略超出栏位的公式, 可以通过适当放缩公式的方式解决, 使用`\resizebox`, 用法如下:
+```latex
+\resizebox{<length>}{<height>}{$ math equations $}
+```
+一共有三个参数, 分别指定：长度、高度以及内容。该方法用于**文本模式**, 而非公式模式[^resizebox], 需要显式地声明公式, 举例如下:
+
+{% raw %}
+```latex
+\begin{equation}
+    \resizebox{0.91\hsize}{!}{% 百分号用于去掉由换行多出的空格
+        $y_{t}^{3} = -145.071 - 0.003 x_{t-1}^{7} + 0.459 x_{t}^{6} + 0.001 x_{t-1}^{8} 
+                     -5.071 x_{t-1}^{9} + 7.322 x_{t-1}^{5} - 0.235 x_{t-1}^{1}$% 此处百分号作用同理
+        }
+\end{equation}
+```
+{% endraw %}
+
+以上例子, 通过`\resizebox`将公式的长度设置为栏宽的0.91倍, 而第二个参数用`!`代替, 表示相应的保持长宽比不变[^resizebox2]。此外, 由于`\resizebox`用于文本, 换行将被解释为空格, 这里通过添加`%`的方式跳过换行而避免多余的空格, 一方面改善了代码阅读体验, 也不影响编译的结果。
 
 ### 左侧上下标
 
@@ -109,6 +130,61 @@ find -L /usr/local/bin/ -lname /usr/local/texlive/*/bin/* | xargs rm
 
 ## 杂项
 
+### 参考文献控制显示作者数量
+
+IEEEtran模板提供了控制参考文献省略作者数量的接口[^bib], 需要在两处做改动以适配个性化需求, 分别是: 
+
++ 正文中`\begin{document}`之后插入`\bstctlcite{IEEEexample:BSTcontrol}`, 注意务必在`\begin{document}`之后插入, 而不是导言区(即之前)
++ 首个引入的`bib`文件首行插入以下内容:
+  ```latex
+  @IEEEtranBSTCTL{IEEEexample:BSTcontrol,
+      CTLuse_forced_etal       = "yes",
+      CTLmax_names_forced_etal = "3",
+      CTLnames_show_etal       = "2"
+  }
+  ```
+
+其中, `CTLuse_forced_etal`、`CTLmax_names_forced_etal`、`CTLnames_show_etal`分别控制: 是否启用作者数量控制、触发作者数量控制的门限、显示的作者数量。以上的参数设定生效后, 参考文献中作者数量**超过3人**的文献将仅显示**前两位**作者, 其他作者以`et al`代替。其他若干可控制的参数可参阅[How to Use the IEEEtran BIB$\mathrm{\TeX}$ Style](http://tug.ctan.org/biblio/bibtex/contrib/IEEEtran/IEEEtran_bst_HOWTO.pdf)。
+
+以下给出完整示例[^bibstyle]:
+
++ 主文件`main.tex`
+
+```latex
+\begin{document}
+
+\bstctlcite{IEEEexample:BSTcontrol} % 使修改的参数生效
+
+\cite{ref1}
+\bibliography{ref}
+\bibliographystyle{IEEEtran}
+
+\end{document}
+```
+{: .snippet}
+
++ 参考文献`ref.bib`
+
+```latex
+@IEEEtranBSTCTL{IEEEexample:BSTcontrol,
+    CTLuse_forced_etal       = "yes",
+    CTLmax_names_forced_etal = "3",
+    CTLnames_show_etal       = "2"
+}
+
+@article{ref1,
+    author = {Braggins, Don},
+    journal = {Sensor Review},
+    month = {December},
+    number = {4},
+    pages = {272--277},
+    title = {Fingerprint sensing and analysis},
+    volume = {21},
+    year = {2001}
+}
+```
+{: .snippet}
+
 ### IEEEtran会议模板启用`\thanks`
 
 默认情况下, IEEEtran会议模板禁用了`\thanks`, `\IEEEmembership`等标识, 导致编译时被略去, 可以通过在`\begin{document}`前加入`\IEEEoverridecommandlockouts`消去禁用[^4]。
@@ -171,3 +247,7 @@ See the caption package documentation for explanation.
 [^hspace]: [\\hspace vs. \\hspace\*](https://tex.stackexchange.com/a/89090/198472)
 [^caption]: [Package caption Warning: Unsupported document class](https://tex.stackexchange.com/a/348152/198472)
 [^sideset]: [\sideset - Tex Command](https://www.tutorialspoint.com/tex_commands/sideset.htm)
+[^resizebox]: [Resizebox within equation environment](https://tex.stackexchange.com/a/237051/198472)
+[^resizebox2]: [What exactly is the exclamation mark \*in terms of the latex language\* in the resizebox{width}{!}{object} command?](https://tex.stackexchange.com/a/326910/198472)
+[^bibstyle]: [undefined control sequence. \\bstctlcite](https://tex.stackexchange.com/a/431089/198472)
+[^bib]: [How to Use the IEEEtran BIB$\mathrm{\TeX}$ Style](http://tug.ctan.org/biblio/bibtex/contrib/IEEEtran/IEEEtran_bst_HOWTO.pdf)
