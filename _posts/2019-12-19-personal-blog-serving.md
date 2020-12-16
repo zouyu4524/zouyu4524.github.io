@@ -4,6 +4,7 @@ title: "个人博客全面迁移"
 key: personal-blog-serving
 author: Yuze Zou
 show_author_profile: true
+modify_date: 2020-11-28
 clipboard: true
 tags: ["建站", "前端"]
 ---
@@ -48,6 +49,31 @@ JEKYLL_ENV=production bundle exec jekyll build
 
 否则将失去评论功能。
 {: .error}
+
+#### Mac系统下的上传方法
+
+Mac系统下只有命令行工具: [`qshell`](https://developer.qiniu.com/kodo/tools/1302/qshell), 用法如下:
+
+```bash
+qshell qupload <profile>
+```
+
+其中`<profile>`为json格式, 设定了上传相关的设定, 如下:
+
+```json
+{
+  "src_dir" : "/Users/frank/Documents/Github/zouyu4524.github.io/_site",
+  "bucket" : "archive-zouyu4524",
+  "skip_suffixes" : ".DS_Store",
+  "check_exists" : true,
+  "check_hash" : true,
+  "overwrite" : true
+}
+```
+
+> 有关qshell的安装和初始化设定可以参见七牛云的[开发者文档](https://developer.qiniu.com/kodo/tools/1302/qshell)。
+
+类似的, Linux系统也可以采用该命令行工具上传。
 
 ### Jekyll permalink设置
 
