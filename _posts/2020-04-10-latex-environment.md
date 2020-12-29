@@ -3,6 +3,7 @@ layout: article
 key: latex-environment
 title: LaTeX相关环境与推荐
 author: Yuze Zou
+modify_date: 2020-12-29
 show_author_profile: true
 mathjax: true
 clipboard: true
@@ -102,7 +103,12 @@ GSview轻量, 启动快, 虽然不再更新了[^update], 但GSview 5.0版足够�
 <img src="https://img.be-my-only.xyz/latex-envrionment-01.png" alt="GSview-install" class="shadow rounded" width="350px">
 </div>
 
-而后, 前往Ghostscript官网下载[安装包](https://www.ghostscript.com/download/gsdnld.html), 选择GPL版本即可。下载后, 无需双击安装, 利用解压工具解包, 将`bin`文件夹更名为`gs`, 并将`lib`目录下的所有文件拷贝至`gs`目录下即具备了Ghostscript的standalone文件, 可将`gs`拷贝至GSview所在的路径。接下来, 在GSview中配置Ghostscript动态链接库(DLL)以及`include Path`即可(如下图所示, 其中`gs`目录的路径为`D:\Ghostgum\gs`), GSview<kbd>→</kbd>Options<kbd>→</kbd>Advanced Configure...
+而后, 前往Ghostscript官网下载[安装包](https://www.ghostscript.com/download/gsdnld.html), 选择GPL版本即可。下载后, 无需双击安装, 利用解压工具解包, 将`bin`文件夹更名为`gs`, 并将`lib`目录下的所有文件拷贝至`gs`目录下即具备了Ghostscript的standalone文件, 可将`gs`拷贝至GSview所在的路径。
+
+随着Ghostscript的更新迭代, 目前最新的版本(>=9.53)已不再被GSview识别支持。<br/>可以在其repo中找到可支持的最新版本([9.52](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs952/gs952w64.exe)), 我这里也提供一个[备份](https://res.be-my-only.xyz/gs952w64.exe)。
+{: .error}
+
+接下来, 在GSview中配置Ghostscript动态链接库(DLL)以及`include Path`即可(如下图所示, 其中`gs`目录的路径为`D:\Ghostgum\gs`), GSview<kbd>→</kbd>Options<kbd>→</kbd>Advanced Configure...
 
 <div style="margin: 0 auto;" align="center">
 <img src="https://img.be-my-only.xyz/latex-envrionment-02.png" alt="GSview-install" class="shadow rounded" width="400px">
