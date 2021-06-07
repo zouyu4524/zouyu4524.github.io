@@ -3,7 +3,7 @@ layout: article
 title: 关于我
 mathjax: false
 pageview: false
-modify_date: 2020-05-13
+modify_date: 2021-06-07
 ---
 
 <div id="ID_PHOTO" style="width: 18%;">
@@ -30,6 +30,9 @@ modify_date: 2020-05-13
 
 <div align="justify" markdown="1">
 
+- **Yuze Zou**, Yusi Long, Shimin Gong, Dinh Thai Hoang, Jin Kai, Wenqing Cheng and Dusit Niyato, "Robust Beamforming Optimization for Self-Sustainable Intelligent Reflecting Surface Assisted Wireless Networks", submitted to _IEEE Transactions on Cognitive Communications and Networking_, under review.
+- Shimin Gong, **Yuze Zou**, Jing Xu, Dinh Thai Hoang, Lyu Bin and Dusit Niyato, "Optimization-driven Hierarchical Learning Framework for Wireless Powered Backscatter-aided Relay Communications", submitted to  _IEEE Transactions on Wireless Communications_, minor revision.
+- Wenqing Cheng, **Yuze Zou**, Jing Xu and Wei Liu, "Dynamic Games for Social Model Training Service Market via Federated Learning Approach," _IEEE Transactions on Computational Social Systems_, 2021.
 - **Yuze Zou**, Shimin Gong, Jing Xu, Wenqing Cheng, Dinh Thai Hoang and Dusit Niyato, "Wireless Powered Intelligent Reflecting Surfaces for Enhancing Wireless Communications," _IEEE Transactions on Vehicular Technology_, 2020.
 - Shimin Gong, **Yuze Zou**, Dinh Hoang, Jing Xu, Wenqing Cheng, and Dusit Niyato, "Capitalizing Backscatter-Aided Hybrid Relay Communications with Wireless Energy Harvesting," _IEEE Internet of Things Journal_, 2020.
 - Jiawen Kang, Zehui Xiong, Dusit Niyato, **Yuze Zou**, Yang Zhang, and Mohsen Guizani, "Reliable federated learning for mobile networks," _IEEE Wireless Communications_, 2020.
