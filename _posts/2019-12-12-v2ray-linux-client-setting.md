@@ -38,7 +38,7 @@ bash <(curl -L -s https://install.direct/go.sh)
 
 ### 配置`config.json`
 
-V2Ray采用的Vmess协议下, 客户端要能连上服务器必须设置与服务器一致的配置, 并且系统时间与服务器时间差不能超过一分钟。此前在网上直接找到的配置文件与我的服务提供方配置不完全一致, 所以直接借用是无法联通的。这篇文章[^1]中提到了一个巧妙的方法: 
+V2Ray采用的Vmess协议下, 客户端要能连上服务器必须设置与服务器一致的配置, 并且系统时间与服务器时间差不能超过一分钟。此前在网上直接找到的配置文件与我的服务提供方配置不完全一致, 所以直接借用是无法联通的。这篇文章~~[^1]~~中提到了一个巧妙的方法: 
 
 **复制windows下的配置文件到Linux下**。
 {: .success}
@@ -76,5 +76,5 @@ C --> D[V2Ray服务器];
 
 </div>
 
-[^1]: [V2Ray的Linux客户端配置](https://www.zhangshenghai.com/posts/26401/)
+[^1]: [V2Ray的Linux客户端配置](https://www.bing.com/search?q=V2Ray%E7%9A%84Linux%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE)
 [^v2ray]: [Linux 安装脚本](https://www.v2ray.com/chapter_00/install.html#linuxscript)
