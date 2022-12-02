@@ -89,6 +89,7 @@ aside:
 
 - [PuTTY](https://www.putty.org/): SSH客户端, 主要用于Windows cmd中使用`pscp`命令从Linux服务器上获取文件
 - [PyCharm](https://www.jetbrains.com/pycharm/): IDE for Python
+- [Python](https://www.scaler.com/topics/python/): Python in detail.
 
 ## S
 
